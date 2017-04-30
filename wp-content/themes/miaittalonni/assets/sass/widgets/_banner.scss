@@ -1,0 +1,14 @@
+.widget-banner {
+	.full-width-header-area &,
+	.after-content-full-width-area & {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&__link {
+		display: block;
+	}
+	&__img {
+		display: inline-block;
+		vertical-align: top;
+	}
+}

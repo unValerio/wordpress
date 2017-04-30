@@ -1,0 +1,105 @@
+// Menu toggle type
+
+@mixin menu-toggle-type($type: $menu-toggle-type){
+	@if ( $type == skin ){
+		@include menu-toggle--skin();
+	}
+	@if ( $type == squeeze ){
+		@include menu-toggle--squeeze();
+	}
+	@if ( $type == arrow ){
+		@include menu-toggle--arrow();
+	}
+}
+// Skin
+@mixin menu-toggle--skin {
+	.menu-toggle-inner {
+		transition-duration: 0.3s;
+		transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+		&::before {
+			transition: top 0.1s 0.34s ease-in,
+			opacity 0.1s ease-in;
+		}
+
+		&::after {
+			transition: bottom 0.1s 0.34s ease-in,
+			transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		}
+	}
+
+	&.is-active {
+		.menu-toggle-inner {
+			transform: rotate(225deg);
+			transition-delay: 0.14s;
+			transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+			&::before {
+				top: 0;
+				opacity: 0;
+				transition: top 0.1s ease-out,
+				opacity 0.1s 0.14s ease-out;
+			}
+
+			&::after {
+				bottom: 0;
+				transform: rotate(-90deg);
+				transition: bottom 0.1s ease-out,
+				transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+			}
+		}
+	}
+}
+// Squeeze
+@mixin menu-toggle--squeeze {
+	.menu-toggle-inner {
+		transition-duration: 0.1s;
+		transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+		&::before {
+			transition: top 0.1s 0.14s ease,
+			opacity 0.1s ease;
+		}
+
+		&::after {
+			transition: bottom 0.1s 0.14s ease,
+			transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		}
+	}
+
+	&.is-active {
+		.menu-toggle-inner {
+			transform: rotate(45deg);
+			transition-delay: 0.14s;
+			transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+			&::before {
+				top: 0;
+				opacity: 0;
+				transition: top 0.1s ease,
+				opacity 0.1s 0.14s ease;
+			}
+
+			&::after {
+				bottom: 0;
+				transform: rotate(-90deg);
+				transition: bottom 0.1s ease,
+				transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+			}
+		}
+	}
+}
+// Arrow
+@mixin menu-toggle--arrow() {
+	&.is-active {
+		.menu-toggle-inner {
+			&::before {
+				transform: translate3d($menu-toggle-layer-width * -0.2, 0, 0) rotate(-45deg) scale(0.7, 1);
+			}
+
+			&::after {
+				transform: translate3d($menu-toggle-layer-width * -0.2, 0, 0) rotate(45deg) scale(0.7, 1);
+			}
+		}
+	}
+}

@@ -1,0 +1,109 @@
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	overflow: hidden;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	.nav-previous {
+		float: left;
+		width: 50%;
+		> a {
+			display: inline-block;
+			vertical-align: top;
+			text-decoration: none;
+			&:before {
+				margin-right: 10px;
+				content: '\f104';
+
+				@include font-awesome-icon();
+			}
+		}
+	}
+	.nav-next {
+		float: right;
+		width: 50%;
+		text-align: right;
+		> a {
+
+			display: inline-block;
+			vertical-align: top;
+			text-decoration: none;
+			&:after {
+				margin-left: 10px;
+				content: '\f105';
+
+				@include font-awesome-icon();
+			}
+		}
+	}
+}
+
+.pagination {
+	margin: -0.5em 0 5.5em;
+	text-align: center;
+
+}
+.page-numbers {
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 0 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	@include media-breakpoint-up(xl) {
+		margin: 0 20px 5px;
+	}
+	.position-two-sidebars &{
+		margin: 0 5px 5px;
+	}
+	&.dots {
+
+	}
+	&.next,
+	&.prev {
+		@include media-breakpoint-up(md) {
+			margin-top: 3px;
+		}
+	}
+	&.next{
+		margin-right: 0;
+		@include media-breakpoint-up(md) {
+			float: right;
+		}
+		i {
+			margin-left: 10px;
+			@include media-breakpoint-up(xl) {
+				margin-left: 27px;
+			}
+		}
+	}
+	&.prev{
+		margin-left: 0;
+		@include media-breakpoint-up(md) {
+			float: left;
+		}
+		i {
+			margin-right: 10px;
+			@include media-breakpoint-up(xl) {
+				margin-right: 27px;
+			}
+		}
+	}
+}
+
+
+.page-links {
+	clear: both;
+	margin: 0 0 1em;
+	&__title {
+		margin-right: 5px;
+	}
+	a,
+	> .page-links__item {
+		display: inline-block;
+		margin: 0 10px 5px 0;
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+	}
+}

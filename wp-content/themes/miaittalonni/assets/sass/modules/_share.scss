@@ -1,0 +1,59 @@
+.share-btns {
+	&__list {
+		text-align: center;
+		border-top: 1px solid $color__background-hr;
+		border-bottom: 1px solid $color__background-hr;
+		padding: 15px 0;
+
+		.single &{
+			@include media-breakpoint-up(xl) {
+				padding: 40px 0;
+			}
+		}
+		
+		.posts-list--default:not(.two-sidebars) &{
+			@include media-breakpoint-up(md) {
+				text-align: left;
+			}
+		}
+	}
+	&__item,
+	&__before-text{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__before-text{
+		display: block;
+		margin-right: 0;
+		@include media-breakpoint-up(md) {
+			display: inline-block;
+			margin-right: 10px;
+		}
+		@include media-breakpoint-up(xl) {
+			margin-right: 25px;
+		}
+		.posts-list--grid-2-cols &,
+		.posts-list--masonry-2-cols &,
+		.posts-list--grid-3-cols &,
+		.posts-list--masonry-3-cols &,
+		.position-two-sidebars &{
+			display: block;
+			margin-right: 0;
+		}
+	}
+	&__item{
+		margin-right: 25px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link {
+		line-height: 2em;
+		display: block;
+		width: 2em;
+		height: 2em;
+		text-align: center;
+		text-decoration: none;
+		@include font-size(.75);
+	}
+}

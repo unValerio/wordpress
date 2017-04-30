@@ -1,0 +1,272 @@
+/*--------------------------------------------------------------
+## Booked
+--------------------------------------------------------------*/
+body .entry-content table.booked-calendar {
+	background: none;
+	border: none;
+	thead {
+		text-transform: capitalize;
+		th,
+		tr.days,
+		tr.days th{
+			background-color: #fff !important;
+			border: none;
+		}
+
+		th .monthName {
+			@include font-size(29/16);
+			a {
+				@include font-size(1);
+			}
+		}
+		tr.days th {
+			@include font-size(12/16);
+			padding: 50px 0 25px;
+		}
+	}
+
+	th .page-right,
+	th .page-left {
+		@include font-size(29/16);
+		top: 50%;
+		@include transform(translateY(-50%));
+	}
+	th .page-right {
+		right: 0;
+		&:hover {
+			right: 0;
+		}
+		i:before {
+			content: '\f105';
+		}
+	}
+	th .page-left {
+		left: 0;
+		&:hover {
+			left: 0;
+		}
+		i:before {
+			content: '\f104';
+		}
+	}
+
+	td {
+		border: none;
+		background: none;
+		@include font-size(12/16);
+		height: 60px !important;
+
+		.date {
+			line-height: 60px !important;
+		}
+	}
+
+	td .date .number {
+		transition: .3s;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		@include media-breakpoint-up(md) {
+			width: 48px;
+			height: 48px;
+			line-height: 48px;
+		}
+	}
+
+	td.prev-date .date,
+	td.blur .date,
+	td:hover .date,
+	tr.week td.active .date,
+	td.today .date,
+	tr.week td.active{
+		background: none;
+	}
+	tr.entryBlock {
+		background-image: url("assets/images/booked_table_bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.booked-appt-list {
+		background: none;
+		border: none;
+
+		h2 {
+			@include font-size(29/16);
+			margin-bottom: 0;
+		}
+
+		.timeslot {
+			border: none;
+			&:hover{
+				background: none;
+			}
+			> * {
+				border: none;
+				padding-top: 9px;
+				padding-bottom: 9px;
+			}
+			&-time{
+				font-weight: 300;
+				padding-left: 0;
+				display: none;
+				@include media-breakpoint-up(md) {
+					display: block;
+					width: 30%;
+				}
+				@include media-breakpoint-up(lg) {
+					width: 35%;
+				}
+			}
+			&-count {
+				display: none;
+				@include media-breakpoint-up(md) {
+					display: block;
+					width: 30%;
+				}
+			}
+			&-people {
+				width: 100%;
+				@include media-breakpoint-up(md) {
+					width: 40%;
+				}
+				@include media-breakpoint-up(lg) {
+					width: 35%;
+				}
+
+				padding-top: 5px;
+				padding-bottom: 5px;
+				padding-right: 0;
+
+				button {
+					width: 100%;
+					@include media-breakpoint-up(md) {
+						width: auto;
+					}
+					.button-timeslot {
+						display: block;
+						@include media-breakpoint-up(md) {
+							display: none;
+						}
+					}
+					.button-text {
+						display: none;
+						@include media-breakpoint-up(md) {
+							display: block;
+						}
+					}
+				}
+			}
+			.spots-available {
+				@include font-size(15/16);
+				text-transform: lowercase;
+				line-height: 1.9;
+			}
+
+			button {
+				@include font-size(13/16);
+				text-transform: uppercase;
+				font-weight: 700;
+				line-height: 2;
+				padding: 4.5px 20.5px;
+				@include border-radius($border__radius);
+				letter-spacing: .78px;
+			}
+		}
+	}
+}
+
+body .widget_booked_calendar .booked-calendar-wrap.small table.booked-calendar{
+	background: none;
+	border: none;
+	thead {
+		text-transform: capitalize;
+		th,
+		tr.days {
+			background-color: #fff !important;
+			border: none;
+		}
+	}
+
+	th .page-right {
+		right: 0;
+		&:hover {
+			right: 0;
+		}
+		i:before {
+			content: '\f105';
+		}
+	}
+	th .page-left {
+		left: 0;
+		&:hover {
+			left: 0;
+		}
+		i:before {
+			content: '\f104';
+		}
+	}
+
+	td {
+		border: none;
+		background: none;
+	}
+
+	td .date .number {
+		transition: .3s;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 50%;
+		@include media-breakpoint-only(md) {
+			width: 23px;
+			height: 23px;
+			line-height: 23px;
+		}
+	}
+
+	td.prev-date .date,
+	td.blur .date,
+	td:hover .date,
+	tr.week td.active .date,
+	td.today .date,
+	tr.week td.active{
+		background: none;
+	}
+
+	tr.week td.active .date .number {
+		transform: scale(1);
+	}
+
+	.booked-appt-list{
+		padding: 10px;
+		
+		h2{
+			@include font-size(1);
+		}
+	}
+}
+
+.booked-profile-appt-list {
+	.appt-block {
+		display: block;
+		& + .appt-block {
+			margin-top: 15px;
+		}
+		.status-block {
+			display: block;
+		}
+		.booked-cal-buttons {
+			a {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+#tm_builder_outer_content .widget_booked_calendar .booked-calendar-wrap.small table.booked-calendar .booked-appt-list h2 {
+	color: #fff;
+	@include media-breakpoint-up(md) {
+		@include font-size(1.5);
+	}
+}

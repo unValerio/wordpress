@@ -1,0 +1,46 @@
+/* #Paginations */
+.page-numbers,
+.page-links .page-links__item{
+	font-style: $pagination_font_style;
+	font-weight: $pagination_font_weight;
+	font-size: $pagination_font_size{px};
+	line-height: $pagination_line_height;
+	font-family: @font_family( $pagination_font_family );
+	letter-spacing: $pagination_letter_spacing{px};
+	color: $regular_text_color;
+}
+a.page-numbers:hover,
+.page-numbers.current,
+.page-links a:hover .page-links__item,
+.page-links > .page-links__item {
+	color: $regular_accent_color_1;
+}
+.page-numbers.next,
+.page-numbers.prev {
+	color: $regular_link_color;
+}
+.page-numbers.next:hover,
+.page-numbers.prev:hover {
+	color: $regular_link_hover_color;
+}
+/* #Post-navigation */
+.comment-navigation a,
+.posts-navigation a,
+.post-navigation a{
+	font-style: $pagination_font_style;
+	font-weight: $pagination_font_weight;
+	font-size: $pagination_font_size{px};
+	line-height: $pagination_line_height;
+	font-family: @font_family( $pagination_font_family );
+	letter-spacing: $pagination_letter_spacing{px};
+}
+/* #Breadcrumbs */
+.breadcrumbs__item {
+	font-style: $breadcrumbs_font_style;
+	font-weight: $breadcrumbs_font_weight;
+	font-size: $breadcrumbs_font_size{px};
+	line-height: $breadcrumbs_line_height;
+	font-family: @font_family( $breadcrumbs_font_family );
+	letter-spacing: $breadcrumbs_letter_spacing{px};
+	color: $invert_accent_color_3;
+}

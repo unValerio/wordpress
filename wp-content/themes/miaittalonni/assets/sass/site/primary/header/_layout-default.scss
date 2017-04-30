@@ -1,0 +1,7 @@
+.site-header.default {
+	.site-branding {
+		@include media-breakpoint-up(md) {
+			text-align: left;
+		}
+	}
+}

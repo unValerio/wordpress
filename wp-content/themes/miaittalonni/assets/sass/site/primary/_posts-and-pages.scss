@@ -1,0 +1,391 @@
+.page-content,
+.entry-content,
+.entry-summary {}
+
+/*--------------------------------------------------------------
+### Hentry (WordPress native CSS-class for post/page article)
+--------------------------------------------------------------*/
+.hentry {
+	position: relative;
+	margin-bottom: 3em;
+
+	@include media-breakpoint-up(xl) {
+		margin-bottom: 5em;
+	}
+
+	.single &,
+	.search &,
+	.posts-list.two-sidebars &{
+		margin-bottom: 3em;
+	}
+
+	.search & {
+		&:first-child {
+			margin-top: 3em;
+		}
+	}
+
+	&.page {
+		margin-bottom: 0;
+
+		.search &{
+			margin-bottom: 3em;
+		}
+	}
+
+	.posts-list:not(.two-sidebars) &{
+		@include media-breakpoint-up(lg) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.post-thumbnail,
+		.post-featured-content {
+			@include media-breakpoint-up(lg) {
+				margin-left: -20px;
+				margin-right: -20px;
+			}
+		}
+	}
+
+	.posts-list--default:not(.two-sidebars) & {
+		& + .hentry {
+			padding-top: 3em;
+			border-top: 1px solid $color__background-hr;
+			@include media-breakpoint-up(xl) {
+				padding-top: 5.8em;
+			}
+			.search &{
+				padding-top: 3em;
+			}
+		}
+	}
+	.posts-list--default.fullwidth & {
+		@include media-breakpoint-up(xl) {
+			padding-left: 245px;
+			padding-right: 245px;
+			.post-thumbnail,
+			.post-featured-content {
+				margin-left: -245px;
+				margin-right: -245px;
+			}
+		}
+	}
+	.posts-list--grid-3-cols.one-left-sidebar &,
+	.posts-list--grid-3-cols.one-right-sidebar &,
+	.posts-list--masonry-3-cols.one-left-sidebar &,
+	.posts-list--masonry-3-cols.one-right-sidebar &{
+		@include media-breakpoint-up(lg) {
+			padding-left: 0;
+			padding-right: 0;
+			.post-thumbnail,
+			.post-featured-content {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+	&.thumb-small {
+		.posts-list--default & {
+			@include media-breakpoint-up(lg) {
+				padding-left: 0;
+				padding-right: 0;
+				.post-thumbnail,
+				.post-featured-content {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+### Entry (header, content, footer)
+--------------------------------------------------------------*/
+.entry {
+	&-title {
+		margin: 0 0 15px;
+		@include font-size(1.5);
+		@include media-breakpoint-up(lg) {
+			@include font-size(1.8125);
+		}
+		.two-sidebars &,
+		.posts-list--grid-3-cols &,
+		.posts-list--masonry-3-cols &{
+			@include font-size(1.5);
+		}
+	}
+	&-meta {
+		.entry-summary + &,
+		.entry-content + & {
+			margin-top: 1em;
+		}
+
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin-right: -15px;
+		margin-left: -15px;
+
+		> * {
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+		[class*="posts-list--grid-"] &,
+		[class*="posts-list--masonry-"] & {
+			margin-right: -10px;
+			margin-left: -10px;
+			flex: 1 1 100%;
+			> * {
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+		}
+	}
+	&-summary,
+	&-content {
+		.posts-list & {
+			display: none;
+
+			@include media-breakpoint-up(md) {
+				display: block;
+			}
+		}
+		.posts-list__item & {
+			margin-top: 1.5em;
+			p {
+				margin-bottom: 1.5em;
+			}
+		}
+		.single .hentry &{
+			@include media-breakpoint-up(lg) {
+				padding-left: 20px;
+				padding-right: 20px;
+				.has-big-image,
+				.post-gallery{
+					margin-left: -20px;
+					margin-right: -20px;
+				}
+			}
+		}
+		.single.position-fullwidth &{
+			@include media-breakpoint-up(xl) {
+				padding-left: 245px;
+				padding-right: 245px;
+
+				.has-big-image,
+				.post-gallery{
+					margin-left: -245px;
+					margin-right: -245px;
+				}
+			}
+		}
+	}
+	&-header{
+		.single .hentry &{
+			@include media-breakpoint-up(lg) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+		.single.position-fullwidth .hentry &{
+			@include media-breakpoint-up(xl) {
+				padding-left: 245px;
+				padding-right: 245px;
+			}
+		}
+	}
+	&-footer {
+		position: relative;
+		.posts-list &,
+		.single .hentry &{
+			margin-top: 0;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			> * {
+				margin-bottom: 15px;
+				@include media-breakpoint-up(xl) {
+					margin-bottom: 25px;
+				}
+				&:last-child {
+					margin-bottom: 15px;
+				}
+			}
+			.btn-link{
+				margin-right: 15px;
+			}
+			.post__tags,
+			.share-btns__list {
+				flex: 1 1 100%;
+			}
+		}
+		[class*="posts-list--grid-"] &,
+		[class*="posts-list--masonry-"] & {
+			.entry-meta {
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+		}
+		.single .hentry &{
+			margin-top: 60px;
+			padding-top: 15px;
+			@include media-breakpoint-up(xl) {
+				padding-top: 45px;
+			}
+			border-top: 1px solid $color__background-hr;
+			border-bottom: 1px solid $color__background-hr;
+			> * {
+				@include media-breakpoint-up(xl) {
+					margin-bottom: 45px;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			.share-btns__list {
+				border-bottom: none;
+			}
+			.post__tags{
+				flex: 0 1 auto;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+### Posts-list (default, grid, masonry)
+--------------------------------------------------------------*/
+.posts-list {
+	&--grid-2-cols,
+	&--masonry-2-cols {
+		&.fullwidth {
+			@include media-breakpoint-up(xl) {
+				padding: 0 215px;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+### Post attributes (thumbnail, meta)
+--------------------------------------------------------------*/
+.post {
+	&-thumbnail {
+		.has-thumb &,
+		.posts-list .format-gallery &,
+		.format-image &{
+			margin-bottom: 2em;
+
+			.posts-list--default & {
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 3em;
+				}
+			}
+			.posts-list--default.two-sidebars & {
+				margin-bottom: 2em;
+			}
+
+			.single &{
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 4em;
+				}
+			}
+		}
+		&__link {
+			.embed-responsive + & {
+				margin-top: 10px;
+			}
+			&.post-thumbnail--small {
+				display: block;
+				margin-bottom: 15px;
+				text-align: center;
+
+				@include media-breakpoint-up(lg) {
+					float: left;
+					margin-right: 30px;
+					text-align: left;
+				}
+			}
+		}
+		&__img {
+			display: inline-block;
+			vertical-align: top;
+
+			.single &{
+				width: 100%;
+			}
+		}
+		&--fullwidth {
+			.posts-list & {
+				display: block;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	&__cats,
+	&__tags{
+		margin-right: -3px;
+		margin-left: -3px;
+		a {
+			@include font-size(.75);
+			display: inline-block;
+			text-transform: uppercase;
+			font-weight: 400;
+			padding: 9px 15px;
+			border: 2px solid;
+			@include border-radius($border__radius);
+			letter-spacing: 1.44px;
+			margin: 5px 3px;
+			line-height: 1.1;
+		}
+	}
+	&__date,
+	&__comments,
+	&__tags {
+		.material-icons,
+		.fa {
+			font-size: 16px;
+			line-height: 1.75;
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+	&__date,
+	&__comments {
+		.single & {
+		}
+	}
+	&__comments {
+		&-link {
+			display: inline-block;
+		}
+		.material-icons,
+		.fa {
+			float: right;
+			margin-right: 0;
+			margin-left: 5px;
+		}
+	}
+	&ed-by__author {
+	}
+}
+
+/*--------------------------------------------------------------
+### Read More button
+--------------------------------------------------------------*/
+.btn {
+	&-link {
+	}
+}
+
+/*--------------------------------------------------------------
+### Sticky Post
+--------------------------------------------------------------*/
+@import "sticky";

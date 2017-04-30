@@ -1,0 +1,125 @@
+.swiper {
+	&-carousel-container {
+		position: relative;
+	}
+	&-slide {
+		&:hover {
+			background-color: #eef4fa;
+			@include border-radius;
+		}
+		.widget-carousel & {
+			display: flex;
+			height: auto;
+		}
+		.inner {
+			display: flex;
+			overflow: hidden;
+			flex-direction: column;
+			width: 100%;
+			@include border-radius;
+			justify-content: space-between;
+			align-self: stretch;
+		}
+		.entry {
+			&-content {
+				margin: 0;
+				padding: 0 2em;
+			}
+			&-footer {
+				margin: 1.5em 0;
+				padding: 0 2em;
+			}
+		}
+		.post-thumbnail__link {
+			display: block;
+			overflow: hidden;
+			margin-bottom: 1em;
+			&:hover {
+				.post-thumbnail__img {
+					@include scale(1.2);
+				}
+			}
+		}
+		.post-thumbnail__img {
+			display: block;
+			width: 100%;
+			@include scale(1);
+			@include transition(all 1s ease);
+		}
+		.post__cats {
+			position: absolute;
+			top: 30px;
+			left: 30px;
+		}
+	}
+	&-pagination {
+		position: static;
+	}
+	&-button-next,
+	&-button-prev {
+		transition: .3s;
+		top: 50%;
+		display: none;
+		width: 50px;
+		height: 50px;
+		margin: -25px 0 0 0;
+		background-image: none;
+		text-align: center;
+		.post-list__item-content &{
+		   background: none;
+		   background-image: none;
+		   &:not(.swiper-button-disabled):hover{
+		    background-color: transparent;
+		   }
+		  }
+
+		@include media-breakpoint-up(lg) {
+			width: 64px;
+			height: 64px;
+			margin: -32px 0 0 0;
+		}
+		.position-two-sidebars &,
+		.posts-list--grid-3-cols &,
+		.posts-list--masonry-3-cols &{
+			width: 50px;
+			height: 50px;
+			margin: -25px 0 0 0;
+		}
+		.fa,
+		.material-icons {
+			line-height: 50px;
+			font-size: 20px;
+			@include media-breakpoint-up(lg) {
+				line-height: 64px;
+				font-size: 28px;
+			}
+			.position-two-sidebars &,
+			.posts-list--grid-3-cols &,
+			.posts-list--masonry-3-cols &{
+				line-height: 50px;
+				font-size: 20px;
+			}
+		}
+	}
+	&-button-next {
+		right: 0;
+	}
+	&-button-prev {
+		left: 0;
+	}
+}
+
+.sidebar-primary,
+.sidebar-secondary,
+.footer-area .widget-carousel:not(.footer-area--centered) {
+	.swiper-button-next,
+	.swiper-button-prev {
+		top: 20%;
+		width: 30px;
+		height: 30px;
+		.material-icons,
+		.fa {
+			margin: 3px;
+		}
+	}
+}

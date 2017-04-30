@@ -1,0 +1,13 @@
+.site-logo {
+	margin: 0;
+	line-height: 1;
+	&__link {
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 3.08px;
+		display: inline-block;
+		&:focus {
+			outline: none;
+		}
+	}
+}

@@ -1,0 +1,131 @@
+/* #Entry Meta */
+.sticky__label{
+	color: $invert_link_color;
+	background-color: $regular_accent_color_1;
+}
+.format-link.no-thumb .sticky__label,
+.format-link.no-thumb .sticky__label:before{
+	background-color: $regular_accent_color_2;
+}
+.post__cats{
+	color: $regular_link_color;
+}
+.post__cats a,
+#tm_builder_outer_content .custom-posts .post__cats a{
+	font-family: @font_family( $h1_font_family );
+	background: $regular_accent_color_1;
+	color: $invert_text_color;
+	border-color: $regular_accent_color_1;
+}
+#tm_builder_outer_content .custom-posts .post__cats a:hover,
+.post__cats a:hover{
+	background: $invert_accent_color_1;
+	color: $regular_accent_color_2
+}
+.invert .post__cats a:hover{
+	background-color: transparent;
+	color: $invert_text_color;
+}
+.entry-meta .material-icons,
+.post__tags .material-icons,
+.post__cats .material-icons,
+.entry-meta .fa,
+.post__tags .fa,
+.post__cats .fa{
+	color: $regular_accent_color_1;
+}
+.post__date a,
+.posted-by a:hover,
+.post__comments a:hover,
+.post__comments a:hover i{
+	color: $regular_text_color;
+}
+.post__date a:hover{
+	color: $regular_link_color;
+}
+.post__tags a,
+#tm_builder_outer_content .custom-posts .post__tags a{
+	font-family: @font_family( $h1_font_family );
+	border-color: $regular_accent_color_1;
+	color: $regular_accent_color_2;
+	background-color: $invert_accent_color_1;
+}
+.post__tags a:hover,
+#tm_builder_outer_content .custom-posts .post__tags a:hover,
+.invert .post__tags a:hover{
+	border-color: $regular_accent_color_1;
+	background-color: $regular_accent_color_1;
+	color: $invert_accent_color_1;
+}
+.invert .post__tags a{
+	background-color: transparent;
+	color: $invert_accent_color_1;
+}
+
+/* #Post Format */
+.format-quote .post-quote{
+	background: $regular_accent_color_2;
+}
+.format-quote .post-quote blockquote{
+	color: $invert_text_color;
+}
+.format-quote .post-quote blockquote a:hover{
+	color: $invert_link_color;
+}
+.post-thumbnail__format-link{
+	background-color: $regular_accent_color_1;
+}
+.post-format-link,
+.post-format-link:hover{
+	color: $invert_link_color;
+}
+
+/* #Author Bio */
+.post-author__holder {
+	background-color: $regular_accent_color_2;
+}
+
+/* #Comments*/
+.comment-form__input-title {
+	color: $regular_accent_color_2;
+}
+.comment-metadata .fn{
+	color: $regular_accent_color_1;
+}
+.comment-date {
+	color: $regular_text_color;
+}
+.comment-date:hover {
+	color: $regular_link_color;
+}
+.comment-reply-link{
+	font-family: @font_family( $h1_font_family );
+}
+.comment-content{
+	color: $regular_accent_color_2;
+}
+#cancel-comment-reply-link {
+	color: $regular_link_color;
+}
+#cancel-comment-reply-link:hover {
+	color: $regular_link_hover_color;
+}
+.comment-respond {
+	background: $regular_accent_color_3;
+}
+/* #Swiper */
+.swiper-slide:hover {
+	background-color: @alpha( $regular_accent_color_1, 10 );
+}
+.swiper-pagination-bullet {
+	background-color: $regular_accent_color_1;
+}
+.swiper-button-next,
+.swiper-button-prev {
+	color: $regular_accent_color_2;
+	background-color: $invert_accent_color_1;
+}
+.swiper-button-next:not(.swiper-button-disabled):hover,
+.swiper-button-prev:not(.swiper-button-disabled):hover{
+	color: $regular_accent_color_1;
+}

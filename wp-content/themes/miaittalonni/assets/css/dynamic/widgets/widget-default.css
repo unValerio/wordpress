@@ -1,0 +1,124 @@
+/* #Widgets (defaults) */
+.widget ul li:before{
+	color: $regular_accent_color_1;
+}
+.widget li a,
+#tm_builder_outer_content .widget li a{
+	color: $regular_text_color;
+}
+.widget li a:hover,
+#tm_builder_outer_content .widget li a:hover{
+	color: $regular_link_color;
+}
+.invert .widget li a{
+	color: $invert_link_color;
+}
+.invert .widget li a:hover{
+	color: $invert_link_hover_color;
+}
+.invert .widget select {
+	color: $regular_text_color;
+}
+
+/* #Widget Calendar */
+.widget_calendar th {
+	color: @lighten($regular_text_color, 34%);
+}
+.widget_calendar tbody td {
+	color: @lighten($regular_text_color, 8%);
+}
+.widget_calendar tbody td a:hover,
+#tm_builder_outer_content .widget_calendar tbody td a:hover{
+	background: $regular_accent_color_1;
+	color: $invert_link_color;
+}
+#tm_builder_outer_content .widget_calendar tfoot td a{
+	color: $regular_link_color;
+}
+#tm_builder_outer_content .widget_calendar tfoot td a:hover {
+	color: $regular_link_hover_color;
+}
+
+/* #Widget Tag Cloud */
+.tagcloud a,
+#tm_builder_outer_content .tagcloud a{
+	font-family: @font_family( $h1_font_family );
+	border-color: $regular_accent_color_1;
+	color: $regular_accent_color_2;
+	background-color: $invert_accent_color_1;
+}
+.tagcloud a:hover,
+#tm_builder_outer_content .tagcloud a:hover{
+	border-color: $regular_accent_color_1;
+	background-color: $regular_accent_color_1;
+	color: $invert_accent_color_1;
+}
+.invert .tagcloud a {
+	color: $invert_accent_color_1;
+}
+
+/* #Widget Recent Posts */
+.widget_recent_entries .post-date {
+	color: $invert_accent_color_3;
+}
+.invert .widget_recent_entries .post-date {
+	color: @darken( $invert_text_color, 10% );
+}
+
+/* #Widget Recent Comments */
+.widget_recent_comments .recentcomments,
+.widget_recent_comments .recentcomments a{
+	color: $regular_link_hover_color;
+}
+.widget_recent_comments .comment-author-link {
+	color: $regular_accent_color_1;
+}
+.widget_recent_comments .recentcomments a:hover{
+	color: $regular_link_color;
+}
+.invert .widget_recent_comments .recentcomments,
+.invert .widget_recent_comments .recentcomments a{
+	color: $invert_link_hover_color;
+}
+.invert .widget_recent_comments .comment-author-link {
+	color: $invert_accent_color_1;
+}
+.invert .widget_recent_comments .recentcomments a:hover{
+	color: $invert_link_color;
+}
+.footer-area-wrap .invert .info-block {
+	color: $invert_accent_color_1;
+}
+.footer-area-wrap .invert a[href*="tel:"], 
+.footer-area-wrap .invert a[href*="mailto:"] {
+	color: $invert_accent_color_1;
+}
+.footer-area-wrap .invert a[href*="tel:"]:hover, 
+.footer-area-wrap .invert a[href*="mailto:"]:hover {
+	color: $regular_accent_color_1;
+}
+.footer-area-wrap .posted-by a:hover, 
+.footer-area-wrap .post__date a, 
+.footer-area-wrap .post__comments a:hover, 
+.footer-area-wrap .post__comments a:hover i {
+	color: $regular_accent_color_1;
+}
+.footer-area-wrap .social-list a::before {
+	color: $invert_accent_color_1;
+}
+.footer-area-wrap .widget_calendar tbody td {
+	color: $invert_accent_color_1;
+}
+.footer-area-wrap .widget_calendar th {
+	color: $regular_accent_color_1;
+}
+.after-content-full-width-area .subscribe-block a {
+	background-color: $invert_accent_color_1;
+	color: $regular_accent_color_1;
+	border-color: $invert_accent_color_1;	
+}
+.after-content-full-width-area .subscribe-block a:hover  {
+	background-color: $footer_bg;
+	border-color: $footer_bg;
+	color: $invert_accent_color_1;
+}

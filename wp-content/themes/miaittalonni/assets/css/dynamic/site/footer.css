@@ -1,0 +1,19 @@
+/* #Footer */
+.footer-container {
+	background-color: $footer_bg;
+}
+.footer-area-wrap,
+.footer-top{
+	background-color: $footer_widgets_bg;
+}
+.invert .site-info,
+.invert .site-info a{
+	color: $invert_accent_color_1;
+}
+.invert .site-info a:hover {
+	color: $invert_link_hover_color
+}
+.footer-container .social-list a::before {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_2;
+}

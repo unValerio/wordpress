@@ -1,0 +1,35 @@
+.post {
+	&-author {
+		&-bio {
+			margin: 2em 0;
+		}
+		&__holder {
+			padding: 1em;
+
+			@include media-breakpoint-up(lg) {
+				padding: 2em;
+			}
+		}
+		&__avatar {
+			float: left;
+			margin: 0 1em 1em 0;
+
+			@include media-breakpoint-up(lg) {
+				margin: 0 2em 1em 0;
+			}
+			.avatar {
+				width: 70px;
+				vertical-align: top;
+				@include border-radius($border__radius);
+
+				@include media-breakpoint-up(lg) {
+					width: auto;
+				}
+			}
+		}
+		&__title {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+	}
+}

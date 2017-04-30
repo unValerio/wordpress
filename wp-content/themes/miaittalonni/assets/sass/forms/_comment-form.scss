@@ -1,0 +1,96 @@
+.comment {
+	&-respond {
+		.comment-list & {
+			margin-bottom: 2em;
+		}
+		padding: 30px 17.5px;
+	}
+	&-reply-title {
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	&-form {
+		display: flex;
+		flex-flow: row wrap;
+
+		> * {
+			padding-right: 12.5px;
+			padding-left: 12.5px;
+			width: 100%;
+		}
+
+		&-author,
+		&-email{
+			@include media-breakpoint-up(lg) {
+				width: 50%;
+			}
+			.comment-list & {
+				width: 100%;
+			}
+		}
+
+		&-comment,
+		&-author,
+		&-email,
+		&-url {
+			margin: 0 0 1em;
+		}
+		&-comment{
+			margin: 0 0 30px;
+			textarea {
+				min-height: 85px;
+				height: 85px;
+
+				.logged-in-as ~ &{
+					min-height: 200px;
+					height: 200px;
+				}
+			}
+		}
+		.form-submit {
+			margin: 0;
+			text-align: center;
+			.submit {
+				min-width: 195px;
+			}
+		}
+		&__field {
+			width: 100%;
+			vertical-align: top;
+		}
+
+		&__input-title{
+			display: block;
+			margin-bottom: 4px;
+		}
+
+		.logged-in-as,
+		.comment-notes {
+			margin: 0 0 1em;
+			text-align: center;
+		}
+		input[type='text'],
+		input[type='email'],
+		input[type='url'],
+		input[type='password'],
+		input[type='search'],
+		input[type='number'],
+		input[type='tel'],
+		input[type='range'],
+		input[type='date'],
+		input[type='month'],
+		input[type='week'],
+		input[type='time'],
+		input[type='datetime'],
+		input[type='datetime-local'],
+		input[type='color'],
+		textarea{
+			border: none;
+			padding: 11px 20px;
+		}
+	}
+}
+#cancel-comment-reply-link {
+	@include font-size(1);
+}

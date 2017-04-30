@@ -1,0 +1,124 @@
+/*Restaurant Menu*/
+.mprm-related-item a .mprm-related-title{
+	font-family: @font_family( $h1_font_family );
+}
+.mprm-related-item a .mprm-related-title/*,
+.site-content .mprm-container a:hover*/{
+	color: $regular_link_hover_color;
+}
+.mprm-related-item a:hover .mprm-related-title,
+/*.site-content .mprm-container a,*/
+.site-content .mprm-main-wrapper.mp_menu_item .mprm-container .mprm-item-title a:hover,
+.site-content .mprm-shortcode-items .mprm-item-title a:hover,
+.widget.mprm_widget .mprm-container.mprm-widget-items .mprm-item-title a:hover {
+	color: $regular_link_color;
+}
+/* Taxonomy pages */
+.site-content .mprm-main-wrapper.mp_menu_item .mprm-excerpt,
+.site-content .mprm-shortcode-items .mprm-excerpt,
+.widget.mprm_widget .mprm-container.mprm-widget-items .mprm-excerpt{
+	color: $invert_accent_color_3;
+}
+.site-content .mprm-main-wrapper.mp_menu_item .mprm-price,
+.site-content .mprm-shortcode-items .mprm-price,
+.widget.mprm_widget .mprm-container.mprm-widget-items .mprm-price{
+	color: $regular_accent_color_1;
+	font-family: @font_family( $h1_font_family );
+}
+.site-content .mprm-main-wrapper.mp_menu_item .mprm-tags .mprm-tag,
+.site-content .mprm-shortcode-items .mprm-tags .mprm-tag,
+.widget.mprm_widget .mprm-container.mprm-widget-items .mprm-tags .mprm-tag{
+	font-family: @font_family( $h1_font_family );
+	color: $invert_text_color;
+	background: $regular_accent_color_1;
+}
+.site-content .mprm-main-wrapper.mp_menu_item .mprm-header{
+	background-color: $regular_accent_color_2;
+}
+/* breadcrumbs */
+.mprm-breadcrumbs li a {
+	color: $regular_link_color !important;
+}
+.mprm-breadcrumbs li a:hover {
+	color: $regular_link_hover_color !important;
+}
+/* Shortcodes */
+.site-content .mprm-container.mprm-shortcode-categories .mprm-menu-category .mprm-effect-hover:before,
+.site-content .mprm-container.mprm-shortcode-categories .mprm-menu-category .mprm-effect-hover:after,
+.widget.mprm_widget .mprm-container.mprm-widget-categories .mprm-menu-category .mprm-effect-hover:before,
+.widget.mprm_widget .mprm-container.mprm-widget-categories .mprm-menu-category .mprm-effect-hover:after{
+	background: @alpha($regular_accent_color_1, 20%);
+}
+.site-content .mprm-container.mprm-shortcode-categories.mprm-view-grid .mprm-title,
+.widget.mprm_widget .mprm-container.mprm-widget-categories.mprm-view-grid .mprm-title{
+	font-family: @font_family( $h1_font_family );
+}
+.site-content .mprm-container.mprm-shortcode-categories.mprm-view-list .mprm-menu-category.mprm-columns .mprm-category-description,
+.widget.mprm_widget .mprm-container.mprm-widget-categories.mprm-view-list .mprm-menu-category.mprm-columns .mprm-category-description{
+	color: $regular_text_color;
+}
+.site-content .mprm-container.mprm-shortcode-categories.mprm-view-list .mprm-menu-category .mprm-link:hover .mprm-title,
+.widget.mprm_widget .mprm-container.mprm-widget-categories.mprm-view-list .mprm-menu-category .mprm-link:hover {
+	color: $regular_accent_color_1;
+}
+.mprm_purchase_submit_wrapper .mprm-submit,
+#mprm_purchase_submit .mprm-submit,
+.cart_item.mprm_checkout a{
+	font-family: @font_family( $h1_font_family );
+}
+.mprm_purchase_submit_wrapper .mprm-submit.plain,
+#mprm_purchase_submit .mprm-submit.plain{
+	color: $regular_link_color !important;
+}
+.mprm_purchase_submit_wrapper .mprm-submit.plain:hover,
+#mprm_purchase_submit .mprm-submit.plain:hover{
+	color: $regular_link_hover_color !important;
+}
+.mprm_purchase_submit_wrapper .button.mprm-submit.mprm-inherit,
+#mprm_purchase_submit .button.mprm-submit.mprm-inherit,
+.cart_item.mprm_checkout a{
+	color: $invert_link_color;
+	background-color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}
+.mprm_purchase_submit_wrapper .button.mprm-submit.mprm-inherit:hover,
+#mprm_purchase_submit .button.mprm-submit.mprm-inherit:hover,
+.cart_item.mprm_checkout a:hover{
+	background-color: @darken( $regular_accent_color_1, 9% );
+	border-color: @darken( $regular_accent_color_1, 9% );
+	color: $invert_link_color;
+}
+.mprm_purchase_submit_wrapper .button.mprm-submit.mprm-inherit:focus,
+#mprm_purchase_submit .button.mprm-submit.mprm-inherit:focus{
+	box-shadow: 0 0 10px $regular_accent_color_1;
+}
+
+.mprm-cart-number-of-items,
+.cart_item.mprm-cart-meta.mprm_total,
+.cart_item.empty,
+.mprm_empty_cart,
+.mprm-container.mprm-widget-items.mprm-view-simple-list .type-mp_menu_item .mprm-flex-container-simple-view .mprm-flex-item .mprm-title{
+	font-style: $h5_font_style;
+	font-weight: $h5_font_weight;
+	font-size: $h5_font_size{px};
+	line-height: $h5_line_height;
+	font-family: @font_family( $h5_font_family );
+	letter-spacing: $h5_letter_spacing{px};
+	color: $regular_h5_color;
+}
+
+.widget.widget_mprm_cart_widget a.mprm-remove-from-cart,
+.mprm_cart_remove_item_btn{
+	font-family: @font_family( $h1_font_family );
+	color: $regular_link_color;
+}
+.widget.widget_mprm_cart_widget a.mprm-remove-from-cart:hover,
+.mprm_cart_remove_item_btn:hover{
+	color: $regular_link_hover_color;
+}
+.widget.widget_mprm_cart_widget .mprm-cart-item-price,
+.widget.widget_mprm_cart_widget .mprm-cart-item-quantity,
+.mprm_cart_total{
+	font-family: @font_family( $h1_font_family );
+	color: $regular_accent_color_2;
+}

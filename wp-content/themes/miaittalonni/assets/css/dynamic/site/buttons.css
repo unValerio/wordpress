@@ -1,0 +1,64 @@
+/* #Button Appearance Styles (regular scheme) */
+.btn-link,
+.btn {
+	font-family: @font_family( $h1_font_family );
+}
+.btn:focus {
+	box-shadow: 0 0 10px $regular_accent_color_1;
+}
+.btn.btn-default,
+.btn.btn-primary,
+.btn.btn-secondary,
+.btn.btn-default:hover,
+.btn.btn-primary:hover,
+.btn.btn-secondary:hover {
+	color: $invert_link_color;
+}
+
+.btn.btn-default,
+.entry-content #tm_builder_outer_content .btn.btn-default {
+	background-color: transparent;
+	border-color: $regular_link_color;
+	color: $regular_link_color;
+}
+.btn.btn-default:hover,
+.entry-content #tm_builder_outer_content .btn.btn-default:hover {
+	background-color: @darken( $regular_accent_color_1, 9% );
+	border-color: @darken( $regular_accent_color_1, 9% );
+}
+.btn.btn-primary,
+.entry-content #tm_builder_outer_content .btn.btn-primary{
+	background-color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}
+.btn.btn-primary:hover,
+.entry-content #tm_builder_outer_content .btn.btn-primary:hover{
+	background-color: @darken( $regular_accent_color_1, 9% );
+	border-color: @darken( $regular_accent_color_1, 9% );
+}
+.entry-content #tm_builder_outer_content .btn.btn-secondary,
+.btn.btn-secondary{
+	background-color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+}
+.btn.btn-secondary:hover,
+.entry-content #tm_builder_outer_content .btn.btn-secondary:hover{
+	background-color: @darken( $regular_accent_color_1, 9% );
+	border-color: @darken( $regular_accent_color_1, 9% );
+}
+
+/* #Button Appearance Styles (invert scheme) */
+.invert .btn.btn-default {}
+.invert .btn.btn-default:hover {}
+
+.invert .btn.btn-primary {}
+.invert .btn.btn-primary:hover {}
+
+.invert .btn.btn-secondary {
+	background-color: transparent;
+	border-color: $regular_link_color;
+}
+.invert .btn.btn-secondary:hover {
+	background-color: @darken( $regular_accent_color_1, 9% );
+	border-color: @darken( $regular_accent_color_1, 9% );
+}

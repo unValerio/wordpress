@@ -1,0 +1,97 @@
+.instagram {
+	&__items {
+		display: flex;
+		flex-flow: row wrap;
+		margin-left: -2px;
+		margin-right: -2px;
+	}
+	&__item {
+		position: relative;
+		min-height: 1px;
+		padding: 2px;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+
+		.footer-area--centered &,
+		.full-width-header-area &,
+		.after-content-full-width-area &,
+		.before-content-area &,
+		.after-content-area &,
+		.before-loop-area &,
+		.after-loop-area & {
+			@include media-breakpoint-up(md) {
+				flex: 0 0 25%;
+				max-width: 25%;
+			}
+			@include media-breakpoint-up(lg) {
+				flex: 0 0 14.2857%;
+				max-width: 14.2857%;
+			}
+		}
+
+		.position-two-sidebars .before-loop-area &,
+		.position-two-sidebars .after-loop-area &{
+			flex: 0 0 33.33333%;
+			max-width: 33.33333%;
+		}
+
+		.footer-area--cols-3 & {
+			@include media-breakpoint-up(sm) {
+				flex: 0 0 25%;
+				max-width: 25%;
+			}
+			@include media-breakpoint-up(md) {
+				flex: 0 0 33.33333%;
+				max-width: 33.33333%;
+			}
+			@include media-breakpoint-up(lg) {
+				flex: 0 0 25%;
+				max-width: 25%;
+			}
+		}
+	}
+	&__link {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		&:hover {
+			.instagram__cover {
+				opacity: .75;
+			}
+		}
+	}
+	&__img {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+	}
+	&__cover {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		color: #fff;
+		opacity: 0;
+		text-align: center;
+		transition: all .25s ease-out;
+		background: #000;
+		&:before {
+			@include material-icon;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			content: '\E8F4';
+			font-size: 2em;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.widget-instagram {
+	.full-width-header-area &,
+	.after-content-full-width-area & {
+		padding: 0 15px;
+	}
+}

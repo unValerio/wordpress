@@ -1,0 +1,36 @@
+.footer-container {
+	padding: 12.5px 0;
+}
+.site-info {
+	@include font-size(.875);
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	&__flex {
+		margin-left: -15px;
+		margin-right: -15px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: stretch;
+		align-items: center;
+
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+		}
+		> * {
+			padding: 5px 15px;
+			text-align: center;
+		}
+	}
+}
+
+.footer-area-container,
+.footer-top{
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
+
+@import "footer/layout-default";
+@import "footer/layout-centered";
+@import "footer/layout-minimal";

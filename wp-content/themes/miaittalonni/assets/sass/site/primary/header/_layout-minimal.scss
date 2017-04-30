@@ -1,0 +1,26 @@
+.site-header.minimal {
+	.header-container_wrap{
+		&:after {
+			display: block;
+			clear: both;
+			width: 100%;
+			content: '';
+		}
+	}
+	.site-branding {
+		@include media-breakpoint-up(xl) {
+			float: left;
+			padding: 3px 0;
+			margin-right: 30px;
+			margin-top: 10px;
+		}
+	}
+	.main-navigation {
+		@include media-breakpoint-up(xl) {
+			width: auto;
+			clear: none;
+			margin-top: 0;
+			float: right;
+		}
+	}
+}

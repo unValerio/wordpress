@@ -1,0 +1,121 @@
+.comments {
+	&-area {
+		position: relative;
+		margin-bottom: 3em;
+		@include media-breakpoint-up(xl) {
+			margin-bottom: 6em;
+		}
+
+		article + & {
+			.single & {
+				padding-top: 42px;
+			}
+		}
+
+		.comment-list,
+		.comments-title,
+		.comment-respond{
+			max-width: 780px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.comment-list + .comment-respond-wrap {
+			padding-top: 45px;
+
+			@include media-breakpoint-up(lg) {
+				padding-top: 90px;
+			}
+			border-top: 1px solid $color__background-hr;
+		}
+	}
+	&-title {
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 38px;
+	}
+}
+
+.comment {
+	&-list {
+		margin: 0;
+		padding: 0 0 30px;
+		list-style: none;
+		.children {
+			margin-left: 0;
+			padding-left: 10px;
+			list-style: none;
+
+			@include media-breakpoint-up(lg) {
+				padding-left: 30px;
+			}
+			.position-two-sidebars &{
+				padding-left: 10px;
+			}
+		}
+		> .comment,
+		> .ping {
+			margin-bottom: 10px;
+		}
+	}
+	&-content {
+		margin-top: 10px;
+		@include media-breakpoint-up(lg) {
+			margin-top: 20px;
+		}
+		a {
+			word-wrap: break-word;
+		}
+		p{
+			margin-bottom: 1em;
+		}
+	}
+	&-body {
+		padding-top: 18px;
+		padding-bottom: 18px;
+		&__holder {
+			position: relative;
+		}
+		.avatar {
+			float: left;
+			width: 40px;
+			margin: 0 15px 10px 0;
+			@include border-radius($border__radius);
+
+			@include media-breakpoint-up(lg) {
+				width: auto;
+				margin: 0 43px 15px 0;
+			}
+		}
+		.fn {
+			font-weight: 300;
+			margin-right: 20px;
+		}
+		.reply {
+			text-align: right;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+	}
+	&-meta{
+		@include font-size(1.125);
+		line-height: 1.1;
+	}
+	&-reply-link {
+
+	}
+	&-date {
+		display: inline-block;
+		@include media-breakpoint-up(lg) {
+			float: right;
+		}
+		&__time {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}
+
+.bypostauthor {
+	display: block;
+}

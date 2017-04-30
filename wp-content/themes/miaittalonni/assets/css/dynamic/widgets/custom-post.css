@@ -1,0 +1,25 @@
+.custom-posts .post-title a,
+#tm_builder_outer_content .custom-posts .post-title a{
+	color: $regular_link_color;
+}
+.custom-posts .post-title a:hover,
+#tm_builder_outer_content .custom-posts .post-title a:hover{
+	color: $regular_link_hover_color;
+}
+.invert .custom-posts .post-title a:hover{
+	color: $invert_link_color;
+}
+.custom-posts .post__date a,
+#tm_builder_outer_content .custom-posts .post__date a{
+	color: $invert_accent_color_3;
+}
+.custom-posts .post__date a:hover,
+#tm_builder_outer_content .custom-posts .post__date a:hover{
+	color: $regular_link_color;
+}
+#tm_builder_outer_content .custom-posts a {
+	color: $regular_link_color;
+}
+#tm_builder_outer_content .custom-posts a:hover {
+	color: $regular_link_hover_color;
+}

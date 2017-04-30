@@ -1,0 +1,42 @@
+.custom-posts {
+	&__item {
+		margin: 0 0 1.5em;
+
+		.sidebar-primary &,
+		.sidebar-secondary &{
+			margin: 0 0 1em;
+			&:last-child {
+				margin: 0;
+			}
+		}
+
+		.post {
+			&-thumbnail {
+				margin-bottom: 1em;
+			}
+			&-title {
+				margin-bottom: 10px;
+			}
+			&-excerpt{
+				margin-bottom: 10px;
+			}
+			&-link {
+				margin-top: 15px;
+				display: inline-block;
+			}
+		}
+		.entry{
+			&-meta{
+				margin-bottom: 10px;
+				span {
+					@include font-size(14/16);
+				}
+			}
+		}
+	}
+	.full-width-header-area &,
+	.after-content-full-width-area & {
+		padding-right: $grid-gutter-width/2;
+		padding-left: $grid-gutter-width/2;
+	}
+}

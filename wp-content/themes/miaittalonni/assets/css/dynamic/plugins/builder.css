@@ -1,0 +1,198 @@
+#tm_builder_outer_content h1 a:hover,
+#tm_builder_outer_content h2 a:hover,
+#tm_builder_outer_content h3 a:hover,
+#tm_builder_outer_content h4 a:hover,
+#tm_builder_outer_content h5 a:hover,
+#tm_builder_outer_content h6 a:hover { color: $regular_link_color; }
+
+/* #Slider */
+.entry-content #tm_builder_outer_content .tm-pb-slider-arrows {
+	color: $regular_accent_color_2;
+}
+.entry-content #tm_builder_outer_content .tm-pb-arrow-prev:hover,
+.entry-content #tm_builder_outer_content .tm-pb-arrow-next:hover {
+	color: $invert_accent_color_1 !important;
+	background-color: $regular_accent_color_1;
+}
+/* #Call to action */
+.entry-content #tm_builder_outer_content .tm_pb_promo{
+	color: $regular_accent_color_2;
+}
+/* #Button */
+.entry-content #tm_builder_outer_content .tm_pb_button{
+	font-family: @font_family( $h1_font_family );
+}
+.entry-content #tm_builder_outer_content .tm_pb_button,
+.entry-content #tm_builder_outer_content .tm_pb_button.tm_pb_more_button,
+.entry-content #tm_builder_outer_content .tm_pb_button.tm_pb_promo_button,
+.entry-content #tm_builder_outer_content .tm_pb_button:hover,
+.entry-content #tm_builder_outer_content .tm_pb_button:hover::after{
+	color: $invert_link_color;
+}
+.entry-content #tm_builder_outer_content .tm_pb_button,
+.entry-content #tm_builder_outer_content .tm_pb_button.tm_pb_more_button,
+.entry-content #tm_builder_outer_content .tm_pb_button.tm_pb_promo_button{
+	background-color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}
+.entry-content #tm_builder_outer_content .tm_pb_button:hover{
+	background-color: @darken( $regular_accent_color_1, 9% );
+	border-color: @darken( $regular_accent_color_1, 9% );
+}
+.entry-content #tm_builder_outer_content .tm_pb_button:focus {
+	box-shadow: 0 0 10px $regular_accent_color_1;
+}
+/* #Testimonial*/
+/* #Brurb*/
+.entry-content #tm_builder_outer_content .custom-hover-1::after{
+	background-color: $regular_accent_color_1;
+}
+.entry-content #tm_builder_outer_content .tm_pb_blurb h4{
+	font-family: @font_family( $h5_font_family );
+}
+/* Person */
+.entry-content #tm_builder_outer_content .tm_pb_member_position{
+	color: $invert_accent_color_3;
+}
+.entry-content #tm_builder_outer_content .tm_pb_team_member_description {
+	color: $regular_accent_color_2;
+}
+.entry-content #tm_builder_outer_content .tm_pb_member_social_links a {
+	color: $invert_accent_color_3;
+}
+.entry-content #tm_builder_outer_content .tm_pb_member_social_links a:hover {
+	color: $regular_accent_color_1;
+}
+/* Toggle - Accordion */
+.entry-content #tm_builder_outer_content .tm_pb_toggle.tm_pb_toggle_close {
+	background-color: $regular_accent_color_3;
+}
+.entry-content #tm_builder_outer_content .tm_pb_toggle_title{
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{px};
+	color: $regular_h6_color;
+}
+.entry-content #tm_builder_outer_content .tm_pb_toggle_content {
+	color: $regular_accent_color_2;
+}
+/* Pricing table */
+.entry-content #tm_builder_outer_content .tm_pb_pricing_heading h2 {
+	font-family: @font_family( $h1_font_family );
+}
+.entry-content #tm_builder_outer_content .tm_pb_tm_price,
+.entry-content #tm_builder_outer_content .tm_pb_pricing .tm_pb_dollar_sign {
+	color: $regular_accent_color_2;
+	font-family: @font_family( $h1_font_family );
+}
+.entry-content #tm_builder_outer_content .tm_pb_pricing .tm_pb_pricing_content {
+	background-color: $regular_accent_color_3;
+}
+.entry-content #tm_builder_outer_content .tm_pb_pricing li:not(.tm_pb_not_available) {
+	color: $regular_accent_color_2;
+}
+.entry-content #tm_builder_outer_content .tm_pb_pricing .tm_pb_pricing_table_button {
+	background-color: $invert_accent_color_3;
+	border-color: $invert_accent_color_3;
+}
+.entry-content #tm_builder_outer_content .tm_pb_pricing .tm_pb_pricing_table_button:hover {
+	background-color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+}
+.entry-content #tm_builder_outer_content .tm_pb_pricing .tm_pb_pricing_table_button:focus {
+	box-shadow: 0 0 10px $regular_accent_color_2;
+}
+.entry-content #tm_builder_outer_content .tm_pb_featured_table .tm_pb_pricing_table_button {
+	background-color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}
+.entry-content #tm_builder_outer_content .tm_pb_featured_table .tm_pb_pricing_table_button:hover {
+	background-color: @darken( $regular_accent_color_1, 9% );
+	border-color: @darken( $regular_accent_color_1, 9% );
+}
+.entry-content #tm_builder_outer_content .tm_pb_featured_table .tm_pb_pricing_table_button:focus {
+	box-shadow: 0 0 10px $regular_accent_color_1;
+}
+/* Contact form */
+.entry-content #tm_builder_outer_content .tm_pb_contact_form_label {
+	color: $regular_accent_color_2;
+}
+.entry-content #tm_builder_outer_content .tm_pb_contact_form_container {
+	background: $regular_accent_color_3;
+}
+/* Bar counter */
+.entry-content #tm_builder_outer_content .tm_pb_counter_title {
+	color: $regular_accent_color_2;
+}
+/* Tabs */
+.entry-content #tm_builder_outer_content .tm_pb_tab {
+	color: $regular_accent_color_2;
+}
+.entry-content #tm_builder_outer_content .tm_pb_tabs_controls li {
+	background: $regular_accent_color_3;
+	color: $regular_text_color;
+}
+/* Social Follow */
+.entry-content #tm_builder_outer_content .tm_pb_social_media_follow li a.icon:hover {
+	color: $regular_accent_color_1 !important;
+}
+/* Countdown timer */
+.entry-content #tm_builder_outer_content .tm_pb_countdown_timer_container{
+	color: $regular_accent_color_2;
+}
+.entry-content #tm_builder_outer_content .tm_pb_countdown_timer .section .value,
+.entry-content #tm_builder_outer_content .tm_pb_countdown_timer .countdown-sep {
+	font-family: @font_family( $h1_font_family );
+}
+.entry-content #tm_builder_outer_content .tm_pb_countdown_timer .countdown-sep,
+.entry-content #tm_builder_outer_content .tm_pb_countdown_timer .section .label{
+	color: $invert_accent_color_3;
+}
+.entry-content #tm_builder_outer_content .tm_pb_countdown_timer.invert .countdown-sep{
+	color: @alpha($invert_text_color, 50%);
+}
+.entry-content #tm_builder_outer_content .tm_pb_countdown_timer h4{
+	font-style: $h2_font_style;
+	font-weight: $h2_font_weight;
+	font-size: @font_size($h2_font_size, multiple, ceil, 1)px;
+	line-height: $h2_line_height;
+	font-family: @font_family( $h2_font_family );
+	letter-spacing: $h2_letter_spacing{px};
+	color: $regular_h2_color;
+}
+/* Circle counter */
+.entry-content #tm_builder_outer_content .tm_pb_circle_counter .percent p,
+.entry-content #tm_builder_outer_content .tm_pb_slide_content .tm_pb_circle_counter .percent p:last-of-type {
+	font-family: @font_family( $h1_font_family );
+	color: $regular_accent_color_2;
+}
+/* Number counter */
+.entry-content #tm_builder_outer_content .tm_pb_number_counter .percent {
+	font-family: @font_family( $h1_font_family );
+}
+/*Post slider*/
+.entry-content #tm_builder_outer_content .tm_pb_post_slider .post-meta a:hover{
+	color: $regular_link_color !important;
+}
+/*Blog*/
+.more-link {
+	font-family: @font_family( $h1_font_family );
+}
+#tm_builder_outer_content .tm_link_content,
+#tm_builder_outer_content .tm_audio_content{
+	background-color: $regular_accent_color_1;
+}
+#tm_builder_outer_content .tm_quote_content{
+	background-color: $regular_accent_color_2;
+}
+/*Sidebar*/
+/*#tm_builder_outer_content .widget a {*/
+	/*color: $regular_link_color;*/
+/*}*/
+
+/*#tm_builder_outer_content .widget a:hover {*/
+	/*color: $regular_link_hover_color;*/
+/*}*/

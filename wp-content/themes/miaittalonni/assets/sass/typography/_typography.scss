@@ -1,0 +1,24 @@
+html {
+	@include font-size(1);
+}
+button,
+input,
+select,
+textarea {
+}
+
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.text-justify{
+	text-align: justify;
+}
+
+@import "headings";
+@import "copy";

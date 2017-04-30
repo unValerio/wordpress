@@ -1,0 +1,1684 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Booked\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-04 11:32-0400\n"
+"PO-Revision-Date: 2015-09-04 11:32-0400\n"
+"Last-Translator: Justin Scheetz <justin@boxystudio.com>\n"
+"Language-Team: Boxy Studio <justin@boxystudio.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: booked.php:221
+msgid "Phone Number"
+msgstr ""
+
+#: booked.php:231 booked.php:451 post-types/booked_appointments.php:30
+#: post-types/booked_appointments.php:32 post-types/booked_appointments.php:48
+msgid "Appointments"
+msgstr ""
+
+#: booked.php:232
+msgid "Pending"
+msgstr ""
+
+#: booked.php:233
+msgid "Calendars"
+msgstr ""
+
+#: booked.php:234
+msgid "Settings"
+msgstr ""
+
+#: booked.php:235
+msgid "Add-Ons"
+msgstr ""
+
+#: booked.php:250 booked.php:258 booked.php:266 booked.php:274
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: booked.php:319
+#, php-format
+msgid "There is %s pending appointment."
+msgid_plural "There are %s pending appointments."
+msgstr[0] ""
+msgstr[1] ""
+
+#: booked.php:319
+msgid "View Pending Appointment"
+msgid_plural "View Pending Appointments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: booked.php:336
+msgid "New <strong>Booked Add-Ons</strong> are available!"
+msgstr ""
+
+#: booked.php:336
+msgid "View Available Add-Ons"
+msgstr ""
+
+#: booked.php:351 booked.php:396
+msgid "Assign this calendar to"
+msgstr ""
+
+#: booked.php:353 booked.php:400 templates/settings.php:209
+msgid "Default"
+msgstr ""
+
+#: booked.php:374 booked.php:411
+msgid "This will use your setting from the Booked Settings panel by default."
+msgstr ""
+
+#: booked.php:485 includes/shortcodes.php:127
+msgid "Upcoming Appointment"
+msgid_plural "Upcoming Appointments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: booked.php:498
+msgid "and"
+msgstr ""
+
+#: booked.php:498
+msgid "more"
+msgstr ""
+
+#: booked.php:584 includes/admin-functions.php:133
+#: includes/ajax/admin-loaders.php:295 templates/settings.php:1187
+msgid "slot"
+msgid_plural "slots"
+msgstr[0] ""
+msgstr[1] ""
+
+#: booked.php:585
+msgid "slots"
+msgstr ""
+
+#: booked.php:586 templates/settings.php:1264 templates/settings.php:1269
+msgid "Add"
+msgstr ""
+
+#: booked.php:587
+msgid "The \"End Time\" needs to be later than the \"Start Time\"."
+msgstr ""
+
+#: booked.php:588
+msgid "Are you sure you want to add those bulk time slots?"
+msgstr ""
+
+#: booked.php:589
+msgid "All fields are required."
+msgstr ""
+
+#: booked.php:590
+msgid "You are about to add the following time slot(s)"
+msgstr ""
+
+#: booked.php:591 includes/ajax/admin-loaders.php:156
+#: includes/shortcodes.php:177
+msgid "to"
+msgstr ""
+
+#: booked.php:592 includes/admin-functions.php:603
+#: includes/ajax/admin-actions.php:183 includes/ajax/admin-actions.php:249
+#: includes/ajax/admin-actions.php:404 includes/ajax/admin-actions.php:462
+#: includes/ajax/admin-actions.php:532 includes/ajax/admin-loaders.php:154
+#: includes/ajax/admin-loaders.php:194 includes/ajax/admin-loaders.php:298
+#: includes/ajax/fe-actions.php:137 includes/ajax/fe-actions.php:213
+#: includes/ajax/fe-actions.php:305 includes/ajax/fe-actions.php:405
+#: includes/ajax/fe-loaders.php:67 includes/dashboard-widget.php:151
+#: includes/functions.php:372 includes/shortcodes.php:173
+#: templates/pending-list.php:149 templates/settings.php:1190
+msgid "All day"
+msgstr ""
+
+#: booked.php:593
+msgid "Time slot added!"
+msgstr ""
+
+#: booked.php:594
+msgid "Please choose a customer."
+msgstr ""
+
+#: booked.php:595 booked.php:678
+msgid "Please fill out all required fields."
+msgstr ""
+
+#: booked.php:596
+msgid "Are you sure you want to delete this time slot?"
+msgstr ""
+
+#: booked.php:597
+msgid "Are you sure you want to delete this custom time slot?"
+msgstr ""
+
+#: booked.php:598 booked.php:674
+msgid "Are you sure you want to cancel this appointment?"
+msgstr ""
+
+#: booked.php:599 booked.php:679
+msgid "A first name and an email address are required fields."
+msgstr ""
+
+#: booked.php:600
+msgid "Are you sure you want to approve this appointment?"
+msgstr ""
+
+#: booked.php:675
+msgid "Please wait..."
+msgstr ""
+
+#: booked.php:676
+msgid "Wrong username/password combination."
+msgstr ""
+
+#: booked.php:677 includes/ajax/fe-loaders.php:76
+#: includes/ajax/fe-loaders.php:117 includes/ajax/fe-loaders.php:253
+#: includes/ajax/fe-loaders.php:310
+msgid "Request Appointment"
+msgstr ""
+
+#: booked.php:695
+msgid "Booking Agent"
+msgstr ""
+
+#: includes/admin-functions.php:9 includes/admin-functions.php:125
+msgid "All day time slot"
+msgstr ""
+
+#: includes/admin-functions.php:11 includes/admin-functions.php:25
+msgid "Start time ..."
+msgstr ""
+
+#: includes/admin-functions.php:12 includes/admin-functions.php:26
+msgid "End time ..."
+msgstr ""
+
+#: includes/admin-functions.php:24
+msgid "# of Each ..."
+msgstr ""
+
+#: includes/admin-functions.php:27
+msgid "Time between ..."
+msgstr ""
+
+#: includes/admin-functions.php:28
+msgid "Appt Length ..."
+msgstr ""
+
+#: includes/admin-functions.php:65 includes/admin-functions.php:288
+#: includes/admin-functions.php:295 includes/functions.php:81
+#: includes/functions.php:88
+msgid "Sun"
+msgstr ""
+
+#: includes/admin-functions.php:66 includes/admin-functions.php:289
+#: includes/functions.php:82
+msgid "Mon"
+msgstr ""
+
+#: includes/admin-functions.php:67 includes/admin-functions.php:290
+#: includes/functions.php:83
+msgid "Tue"
+msgstr ""
+
+#: includes/admin-functions.php:68 includes/admin-functions.php:291
+#: includes/functions.php:84
+msgid "Wed"
+msgstr ""
+
+#: includes/admin-functions.php:69 includes/admin-functions.php:292
+#: includes/functions.php:85
+msgid "Thu"
+msgstr ""
+
+#: includes/admin-functions.php:70 includes/admin-functions.php:293
+#: includes/functions.php:86
+msgid "Fri"
+msgstr ""
+
+#: includes/admin-functions.php:71 includes/admin-functions.php:294
+#: includes/functions.php:87
+msgid "Sat"
+msgstr ""
+
+#: includes/admin-functions.php:93 includes/ajax/admin-loaders.php:267
+#: includes/ajax/fe-loaders.php:118 includes/ajax/fe-loaders.php:189
+#: includes/ajax/fe-loaders.php:254 includes/ajax/fe-loaders.php:311
+#: includes/shortcodes.php:203
+msgid "Cancel"
+msgstr ""
+
+#: includes/admin-functions.php:93
+msgid "Add ..."
+msgstr ""
+
+#: includes/admin-functions.php:106 includes/ajax/admin-loaders.php:30
+msgid "No time slots."
+msgstr ""
+
+#: includes/admin-functions.php:148 templates/settings.php:234
+msgid "Every 1 hour"
+msgstr ""
+
+#: includes/admin-functions.php:149
+msgid "Every 1 hour, 30 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:150 templates/settings.php:233
+msgid "Every 2 hours"
+msgstr ""
+
+#: includes/admin-functions.php:151
+msgid "Every 45 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:152 templates/settings.php:235
+msgid "Every 30 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:153
+msgid "Every 20 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:154 templates/settings.php:236
+msgid "Every 15 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:155 templates/settings.php:237
+msgid "Every 10 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:156 templates/settings.php:238
+msgid "Every 5 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:163
+msgid "5 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:164
+msgid "10 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:165 templates/settings.php:300
+msgid "15 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:166
+msgid "20 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:167 templates/settings.php:301
+msgid "30 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:168 templates/settings.php:302
+msgid "45 minutes"
+msgstr ""
+
+#: includes/admin-functions.php:169 templates/settings.php:262
+#: templates/settings.php:303
+msgid "1 hour"
+msgstr ""
+
+#: includes/admin-functions.php:175
+msgid "1 time slot"
+msgstr ""
+
+#: includes/admin-functions.php:176
+msgid "2 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:177
+msgid "3 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:178
+msgid "4 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:179
+msgid "5 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:180
+msgid "6 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:181
+msgid "7 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:182
+msgid "8 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:183
+msgid "9 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:184
+msgid "10 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:185
+msgid "11 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:186
+msgid "12 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:187
+msgid "13 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:188
+msgid "14 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:189
+msgid "15 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:190
+msgid "16 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:191
+msgid "17 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:192
+msgid "18 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:193
+msgid "19 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:194
+msgid "20 time slots"
+msgstr ""
+
+#: includes/admin-functions.php:277 includes/functions.php:74
+msgid "Back to"
+msgstr ""
+
+#: includes/admin-functions.php:373 includes/admin-functions.php:815
+msgid "appointment"
+msgid_plural "appointments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin-functions.php:412 includes/shortcodes.php:41
+#: includes/shortcodes.php:80 includes/widgets.php:28
+#: templates/settings.php:1141 templates/settings.php:1233
+msgid "Default Calendar"
+msgstr ""
+
+#: includes/admin-functions.php:418 includes/admin-functions.php:434
+msgid "Appointments for"
+msgstr ""
+
+#: includes/admin-functions.php:427
+msgid "for"
+msgstr ""
+
+#: includes/admin-functions.php:612 includes/functions.php:382
+msgid "time slot"
+msgid_plural "time slots"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin-functions.php:612 includes/functions.php:382
+msgid "available"
+msgstr ""
+
+#: includes/admin-functions.php:622 post-types/booked_appointments.php:31
+#: post-types/booked_appointments.php:33
+msgid "Appointment"
+msgid_plural "Appointments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin-functions.php:637 includes/dashboard-widget.php:170
+#: templates/pending-list.php:132
+msgid "(this user no longer exists)"
+msgstr ""
+
+#: includes/admin-functions.php:651 includes/admin-functions.php:686
+#: includes/admin-functions.php:712 templates/pending-list.php:157
+msgid "Approve"
+msgstr ""
+
+#: includes/admin-functions.php:664 includes/ajax/admin-loaders.php:199
+#: post-types/booked_appointments.php:36
+msgid "New Appointment"
+msgstr ""
+
+#: includes/admin-functions.php:676
+msgid ""
+"There are additional appointments booked from previously available time "
+"slots:"
+msgstr ""
+
+#: includes/admin-functions.php:685 includes/admin-functions.php:711
+#: includes/shortcodes.php:181
+msgid "pending"
+msgstr ""
+
+#: includes/admin-functions.php:702
+msgid ""
+"There are no appointment slots available for this day, however there are "
+"appointments booked from previously available time slots:"
+msgstr ""
+
+#: includes/admin-functions.php:724 includes/functions.php:395
+#: includes/functions.php:404
+msgid "There are no appointment time slots available for this day."
+msgstr ""
+
+#: includes/admin-functions.php:724
+msgid "Would you like to add some?"
+msgstr ""
+
+#: includes/ajax/admin-actions.php:582 includes/ajax/fe-actions.php:173
+#: includes/ajax/fe-actions.php:384
+msgid "Whoops!"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:116 includes/ajax/admin-loaders.php:128
+msgid "Contact Information"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:117 includes/ajax/admin-loaders.php:129
+msgid "Name"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:118 includes/ajax/admin-loaders.php:130
+msgid "Email"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:131
+msgid "Phone"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:159
+msgid "Appointment Information"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:161
+msgid "Date"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:162
+msgid "Time"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:210
+msgid "Current Customer"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:213
+msgid "New Customer"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:218
+msgid "Guest"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:226
+msgid "Select a customer ..."
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:237 includes/ajax/admin-loaders.php:249
+#: includes/ajax/fe-loaders.php:269
+msgid "First name..."
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:238 includes/ajax/fe-loaders.php:270
+msgid "Last name..."
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:241 includes/ajax/admin-loaders.php:252
+#: includes/ajax/fe-loaders.php:273
+msgid "Email..."
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:249
+msgid "Name..."
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:266
+msgid "Create Appointment"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:287 templates/settings.php:1179
+msgid "Slots Available"
+msgstr ""
+
+#: includes/ajax/admin-loaders.php:287 templates/settings.php:1179
+msgid "Time Slot"
+msgstr ""
+
+#: includes/ajax/fe-actions.php:171
+msgid "A name and a valid email address are required."
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:106
+#, php-format
+msgid "You are about to request an appointment for %s."
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:106
+msgid ""
+"Please confirm that you would like to request the following appointment:"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:120 includes/ajax/fe-loaders.php:313
+msgid "Okay"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:126
+#, php-format
+msgid ""
+"Sorry, but you've hit the appointment limit. Each user may only book %d "
+"appointment at a time."
+msgid_plural ""
+"Sorry, but you've hit the appointment limit. Each user may only book %d "
+"appointments at a time."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ajax/fe-loaders.php:145
+msgid "I am a new customer"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:152
+msgid "I am a current customer"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:168
+msgid "Username"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:169
+msgid "Username..."
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:173
+msgid "Password"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:188
+msgid "Sign in"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:212
+msgid "Your name:"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:216
+msgid "Your email address:"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:227 includes/ajax/fe-loaders.php:283
+#: includes/general-functions.php:276
+msgid "Please enter the following text:"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:264
+msgid "Registration:"
+msgstr ""
+
+#: includes/ajax/fe-loaders.php:265
+msgid "Your first name and an email address are required."
+msgstr ""
+
+#: includes/dashboard-widget.php:129
+msgid "There are no upcoming appointments."
+msgstr ""
+
+#: includes/dashboard-widget.php:178 templates/pending-list.php:162
+msgid "This appointment has passed."
+msgstr ""
+
+#: includes/functions.php:191 includes/functions.php:500
+#, php-format
+msgid "%d time slot"
+msgid_plural "%d time slots"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/functions.php:283
+msgid "Available Appointments"
+msgstr ""
+
+#: includes/functions.php:377
+msgid "Unavailable"
+msgstr ""
+
+#: includes/functions.php:377
+msgid "Book Appointment"
+msgstr ""
+
+#: includes/functions.php:618
+msgid "Choose..."
+msgstr ""
+
+#: includes/functions.php:760
+msgid "The passwords you entered do not match.  Your password was not updated."
+msgstr ""
+
+#: includes/functions.php:771
+msgid "The Email you entered is not valid.  please try again."
+msgstr ""
+
+#: includes/functions.php:773
+msgid "This email is already used by another user.  try a different one."
+msgstr ""
+
+#: includes/functions.php:797
+msgid "Error uploading avatar."
+msgstr ""
+
+#: includes/functions.php:802
+msgid "Avatar uploader security check failed."
+msgstr ""
+
+#: includes/functions.php:828
+msgid ""
+"Your appointment has been requested! We have also set up an account for you. "
+"Your login information has been sent via email. When logged in, you can view "
+"your upcoming appointments below. Be sure to change your password to "
+"something more memorable by using the Edit Profile tab above."
+msgstr ""
+
+#: includes/functions.php:835
+msgid ""
+"Your appointment has been requested! It will be updated below if approved."
+msgstr ""
+
+#: includes/functions.php:837
+msgid "Your appointment has been added to our calendar!"
+msgstr ""
+
+#: includes/functions.php:856 templates/profile.php:73
+msgid "Edit Profile"
+msgstr ""
+
+#: includes/functions.php:872
+msgid "Update Avatar"
+msgstr ""
+
+#: includes/functions.php:872 includes/functions.php:882
+#: includes/functions.php:886 includes/functions.php:891
+#: includes/functions.php:898 includes/functions.php:902
+#: includes/functions.php:908
+msgid "(disabled in demo)"
+msgstr ""
+
+#: includes/functions.php:873
+msgid "Choose image ..."
+msgstr ""
+
+#: includes/functions.php:875
+msgid "Recommended size: 100px by 100px or larger"
+msgstr ""
+
+#: includes/functions.php:882
+msgid "Display Name"
+msgstr ""
+
+#: includes/functions.php:886
+msgid "E-mail *"
+msgstr ""
+
+#: includes/functions.php:891
+msgid "Website"
+msgstr ""
+
+#: includes/functions.php:898
+msgid "Change Password"
+msgstr ""
+
+#: includes/functions.php:902
+msgid "Repeat Password"
+msgstr ""
+
+#: includes/functions.php:908
+msgid "Short Bio"
+msgstr ""
+
+#: includes/functions.php:918
+msgid "Update"
+msgstr ""
+
+#: includes/general-functions.php:149
+msgid "The text you've entered does not match the image."
+msgstr ""
+
+#: includes/general-functions.php:159
+msgid "All fields are required to register."
+msgstr ""
+
+#: includes/general-functions.php:163
+msgid "That username is too short; at least 4 characters is required."
+msgstr ""
+
+#: includes/general-functions.php:167
+msgid "That username already exists."
+msgstr ""
+
+#: includes/general-functions.php:171
+msgid "That username is not valid."
+msgstr ""
+
+#: includes/general-functions.php:175
+msgid "That email address is not valid."
+msgstr ""
+
+#: includes/general-functions.php:179
+msgid "That email is already in use."
+msgstr ""
+
+#: includes/general-functions.php:224 includes/shortcodes.php:256
+msgid "Success!"
+msgstr ""
+
+#: includes/general-functions.php:224
+msgid "Registration complete, please check your email for login information."
+msgstr ""
+
+#: includes/general-functions.php:261
+msgid "First Name"
+msgstr ""
+
+#: includes/general-functions.php:265
+msgid "Last Name"
+msgstr ""
+
+#: includes/general-functions.php:269
+msgid "Your Email"
+msgstr ""
+
+#: includes/general-functions.php:295 includes/shortcodes.php:247
+msgid "Register"
+msgstr ""
+
+#: includes/profiles.php:63
+#, php-format
+msgid "%s's Profile"
+msgstr ""
+
+#: includes/shortcodes.php:125
+msgid "Past Appointment"
+msgid_plural "Past Appointments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/shortcodes.php:135
+msgid "Today"
+msgstr ""
+
+#: includes/shortcodes.php:177
+msgid "from"
+msgstr ""
+
+#: includes/shortcodes.php:177
+msgid "at"
+msgstr ""
+
+#: includes/shortcodes.php:181
+msgid "approved"
+msgstr ""
+
+#: includes/shortcodes.php:190
+msgid "Calendar"
+msgstr ""
+
+#: includes/shortcodes.php:195
+msgid "Additional information"
+msgstr ""
+
+#: includes/shortcodes.php:200
+#, php-format
+msgid "Appointment with %s"
+msgstr ""
+
+#: includes/shortcodes.php:200
+msgid "Google Calendar"
+msgstr ""
+
+#: includes/shortcodes.php:224
+msgid "Please log in to view your upcoming appointments."
+msgstr ""
+
+#: includes/shortcodes.php:246
+msgid "Login"
+msgstr ""
+
+#: includes/shortcodes.php:248
+msgid "Forgot your password?"
+msgstr ""
+
+#: includes/shortcodes.php:257
+msgid "Check your email to reset your password."
+msgstr ""
+
+#: includes/shortcodes.php:265
+msgid "Both fields are required to log in."
+msgstr ""
+
+#: includes/shortcodes.php:266
+msgid "Sorry, those login credentials are incorrect."
+msgstr ""
+
+#: includes/shortcodes.php:343
+msgid "A username or email address is required to reset your password."
+msgstr ""
+
+#: includes/shortcodes.php:346
+msgid "Username or Email"
+msgstr ""
+
+#: includes/shortcodes.php:351
+msgid "Reset my password"
+msgstr ""
+
+#: includes/widgets.php:8
+msgid "Appointment Calendar"
+msgstr ""
+
+#: includes/widgets.php:33
+msgid "Widget Title"
+msgstr ""
+
+#: includes/widgets.php:38
+msgid "Calendar to Display"
+msgstr ""
+
+#: post-types/booked_appointments.php:34
+msgid "Add New"
+msgstr ""
+
+#: post-types/booked_appointments.php:35
+msgid "Add New Appointment"
+msgstr ""
+
+#: post-types/booked_appointments.php:37
+msgid "Edit Appointment"
+msgstr ""
+
+#: post-types/booked_appointments.php:38
+msgid "View Appointment"
+msgstr ""
+
+#: post-types/booked_appointments.php:39 templates/admin-calendar.php:35
+msgid "All Appointments"
+msgstr ""
+
+#: post-types/booked_appointments.php:40
+msgid "Search Appointments"
+msgstr ""
+
+#: post-types/booked_appointments.php:41
+msgid "Parent Appointments:"
+msgstr ""
+
+#: post-types/booked_appointments.php:42
+msgid "No Appointments found."
+msgstr ""
+
+#: post-types/booked_appointments.php:43
+msgid "No Appointments found in Trash."
+msgstr ""
+
+#: post-types/booked_appointments.php:60 post-types/booked_appointments.php:75
+msgid "Custom Calendars"
+msgstr ""
+
+#: post-types/booked_appointments.php:61
+msgid "Custom Calendar"
+msgstr ""
+
+#: post-types/booked_appointments.php:62
+msgid "Search Custom Calendars"
+msgstr ""
+
+#: post-types/booked_appointments.php:63
+msgid "Popular Custom Calendars"
+msgstr ""
+
+#: post-types/booked_appointments.php:64
+msgid "All Custom Calendars"
+msgstr ""
+
+#: post-types/booked_appointments.php:67
+msgid "Edit Custom Calendar"
+msgstr ""
+
+#: post-types/booked_appointments.php:68
+msgid "Update Custom Calendar"
+msgstr ""
+
+#: post-types/booked_appointments.php:69
+msgid "Add New Custom Calendar"
+msgstr ""
+
+#: post-types/booked_appointments.php:70
+msgid "New Custom Calendar Name"
+msgstr ""
+
+#: post-types/booked_appointments.php:71
+msgid "Separate custom calendars with commas"
+msgstr ""
+
+#: post-types/booked_appointments.php:72
+msgid "Add or remove custom calendars"
+msgstr ""
+
+#: post-types/booked_appointments.php:73
+msgid "Choose from the most used custom calendars"
+msgstr ""
+
+#: post-types/booked_appointments.php:74
+msgid "No custom calendars found."
+msgstr ""
+
+#: templates/add-ons.php:3
+msgid "Booked Add-Ons"
+msgstr ""
+
+#: templates/add-ons.php:33
+msgid "New!"
+msgstr ""
+
+#: templates/add-ons.php:40
+msgid "Installed &amp; Active"
+msgstr ""
+
+#: templates/add-ons.php:56
+#, php-format
+msgid ""
+"There was an issue loading the available add-ons, please %s to purchase "
+"directly from our website."
+msgstr ""
+
+#: templates/add-ons.php:56
+msgid "click here"
+msgstr ""
+
+#: templates/admin-calendar.php:58
+msgid "There are no calendars assigned to you."
+msgstr ""
+
+#: templates/admin-calendar.php:59
+msgid ""
+"Get in touch with the Administration of this site to get a calendar assigned "
+"to you."
+msgstr ""
+
+#: templates/pending-list.php:3 templates/settings.php:5
+msgid "Updating, please wait..."
+msgstr ""
+
+#: templates/pending-list.php:4
+msgid "Pending Appointments"
+msgstr ""
+
+#: templates/pending-list.php:10
+msgid "Appointment Details"
+msgstr ""
+
+#: templates/pending-list.php:11
+msgid "Options"
+msgstr ""
+
+#: templates/pending-list.php:110
+msgid "There are no pending appointments."
+msgstr ""
+
+#: templates/profile.php:18
+msgid "No profile here!"
+msgstr ""
+
+#: templates/profile.php:19
+msgid "Sorry, this user profile does not exist."
+msgstr ""
+
+#: templates/profile.php:51
+msgid "Logout"
+msgstr ""
+
+#: templates/profile.php:63
+msgid "Upcoming Appointments"
+msgstr ""
+
+#: templates/profile.php:68
+msgid "Appointment History"
+msgstr ""
+
+#: templates/settings.php:7
+msgid "Appointment Settings"
+msgstr ""
+
+#: templates/settings.php:14
+msgid "General"
+msgstr ""
+
+#: templates/settings.php:15
+msgid "User Emails"
+msgstr ""
+
+#: templates/settings.php:16
+msgid "Admin Emails"
+msgstr ""
+
+#: templates/settings.php:17
+msgid "Custom Fields"
+msgstr ""
+
+#: templates/settings.php:18 templates/settings.php:1082
+msgid "Default Time Slots"
+msgstr ""
+
+#: templates/settings.php:19
+msgid "Custom Time Slots"
+msgstr ""
+
+#: templates/settings.php:20
+msgid "Shortcodes"
+msgstr ""
+
+#: templates/settings.php:73
+msgid "Booking Type"
+msgstr ""
+
+#: templates/settings.php:75
+msgid ""
+"You have the option to choose between \"Registered\" and \"Guest\" booking. "
+"Registered booking will require all appointments to be booked by a "
+"registered user (default). Guest booking will allow anyone with a name and "
+"email address to book an appointment."
+msgstr ""
+
+#: templates/settings.php:81
+msgid "Registered Booking"
+msgstr ""
+
+#: templates/settings.php:82
+msgid "Guest Booking"
+msgstr ""
+
+#: templates/settings.php:96
+msgid "Profile Page"
+msgstr ""
+
+#: templates/settings.php:98
+msgid ""
+"Create a page that includes the <strong>[booked-login]</strong> shortcode "
+"for your profile template then choose it from this dropdown."
+msgstr ""
+
+#: templates/settings.php:99
+msgid ""
+"Or instead of this page, you can use the <strong>[booked-profile]</strong> "
+"shortcode to display the Profile content anywhere."
+msgstr ""
+
+#: templates/settings.php:113
+msgid "Choose a page to use for profile page..."
+msgstr ""
+
+#: templates/settings.php:130
+msgid "Profile Options"
+msgstr ""
+
+#: templates/settings.php:138
+msgid "Disable \"Avatar\""
+msgstr ""
+
+#: templates/settings.php:144
+msgid "Disable \"Website\""
+msgstr ""
+
+#: templates/settings.php:150
+msgid "Disable \"Short Bio\""
+msgstr ""
+
+#: templates/settings.php:157
+msgid "Login Redirect"
+msgstr ""
+
+#: templates/settings.php:159
+msgid ""
+"If you would like the login form to redirect somewhere else (instead of "
+"reloading the same page), you can choose a page here."
+msgstr ""
+
+#: templates/settings.php:173
+msgid "Redirect to the same page"
+msgstr ""
+
+#: templates/settings.php:193
+msgid "Appointment Booking Redirect"
+msgstr ""
+
+#: templates/settings.php:195
+msgid ""
+"If you would like to direct your users to a custom page after a successful "
+"appointment booking (instead of going to the selected Profile Page above), "
+"you can choose a page here."
+msgstr ""
+
+#: templates/settings.php:225
+msgid "Time Slot Intervals"
+msgstr ""
+
+#: templates/settings.php:227
+msgid ""
+"Choose the intervals you need for your appointment time slots. This will "
+"only affect the way default time slots are entered."
+msgstr ""
+
+#: templates/settings.php:253
+msgid "Appointment Buffer"
+msgstr ""
+
+#: templates/settings.php:255
+msgid ""
+"To prevent appointments from getting booked too close to the current date "
+"and/or time, you can set an appointment buffer. Available appointments time "
+"slots will be pushed up to a new date and time depending on which buffer "
+"amount you choose below."
+msgstr ""
+
+#: templates/settings.php:261 templates/settings.php:299
+msgid "No buffer"
+msgstr ""
+
+#: templates/settings.php:263 templates/settings.php:304
+msgid "2 hours"
+msgstr ""
+
+#: templates/settings.php:264 templates/settings.php:305
+msgid "3 hours"
+msgstr ""
+
+#: templates/settings.php:265 templates/settings.php:306
+msgid "4 hours"
+msgstr ""
+
+#: templates/settings.php:266 templates/settings.php:307
+msgid "5 hours"
+msgstr ""
+
+#: templates/settings.php:267 templates/settings.php:308
+msgid "6 hours"
+msgstr ""
+
+#: templates/settings.php:268 templates/settings.php:309
+msgid "12 hours"
+msgstr ""
+
+#: templates/settings.php:269 templates/settings.php:310
+msgid "24 hours"
+msgstr ""
+
+#: templates/settings.php:270 templates/settings.php:311
+msgid "2 days"
+msgstr ""
+
+#: templates/settings.php:271 templates/settings.php:312
+msgid "3 days"
+msgstr ""
+
+#: templates/settings.php:272 templates/settings.php:313
+msgid "5 days"
+msgstr ""
+
+#: templates/settings.php:273 templates/settings.php:314
+msgid "6 days"
+msgstr ""
+
+#: templates/settings.php:274 templates/settings.php:315
+msgid "1 week"
+msgstr ""
+
+#: templates/settings.php:275 templates/settings.php:316
+msgid "2 weeks"
+msgstr ""
+
+#: templates/settings.php:276 templates/settings.php:317
+msgid "4 weeks"
+msgstr ""
+
+#: templates/settings.php:291
+msgid "Cancellation Buffer"
+msgstr ""
+
+#: templates/settings.php:293
+msgid ""
+"To prevent appointments from getting cancelled too close to the appointment "
+"time, you can set a cancellation buffer."
+msgstr ""
+
+#: templates/settings.php:332
+msgid "Appointment Limit"
+msgstr ""
+
+#: templates/settings.php:334
+msgid ""
+"To prevent users from booking too many appointments, you can set an "
+"appointment limit."
+msgstr ""
+
+#: templates/settings.php:340
+msgid "No limit"
+msgstr ""
+
+#: templates/settings.php:341
+msgid "1 appointment"
+msgstr ""
+
+#: templates/settings.php:342
+msgid "2 appointments"
+msgstr ""
+
+#: templates/settings.php:343
+msgid "3 appointments"
+msgstr ""
+
+#: templates/settings.php:344
+msgid "4 appointments"
+msgstr ""
+
+#: templates/settings.php:345
+msgid "5 appointments"
+msgstr ""
+
+#: templates/settings.php:346
+msgid "6 appointments"
+msgstr ""
+
+#: templates/settings.php:347
+msgid "7 appointments"
+msgstr ""
+
+#: templates/settings.php:348
+msgid "8 appointments"
+msgstr ""
+
+#: templates/settings.php:349
+msgid "9 appointments"
+msgstr ""
+
+#: templates/settings.php:350
+msgid "10 appointments"
+msgstr ""
+
+#: templates/settings.php:351
+msgid "15 appointments"
+msgstr ""
+
+#: templates/settings.php:352
+msgid "20 appointments"
+msgstr ""
+
+#: templates/settings.php:353
+msgid "25 appointments"
+msgstr ""
+
+#: templates/settings.php:354
+msgid "50 appointments"
+msgstr ""
+
+#: templates/settings.php:369
+msgid "New Appointment Default"
+msgstr ""
+
+#: templates/settings.php:371
+msgid ""
+"Would you like your appointment requests to go into a pending list or should "
+"they be approved immediately?"
+msgstr ""
+
+#: templates/settings.php:377
+msgid "Set as Pending"
+msgstr ""
+
+#: templates/settings.php:378
+msgid "Approve Immediately"
+msgstr ""
+
+#: templates/settings.php:394
+msgid "Other Options"
+msgstr ""
+
+#: templates/settings.php:402
+msgid "Hide \"Default\" calendar in the front-end calendar dropdown"
+msgstr ""
+
+#: templates/settings.php:408
+msgid "Hide \"+ Google Calender\" button in appointment list"
+msgstr ""
+
+#: templates/settings.php:414
+msgid "Hide end times on front-end (show only start times)"
+msgstr ""
+
+#: templates/settings.php:420
+msgid ""
+"Redirect users (except Administrators and Booking Agents) from \"/wp-admin/"
+"\" back to the profile page (if set) or homepage (if no profile page is set)."
+msgstr ""
+
+#: templates/settings.php:427
+msgid "Front-End Color Settings"
+msgstr ""
+
+#: templates/settings.php:477 templates/settings.php:662
+msgid ""
+"If you do not want to send email notifications for any or all of the "
+"following actions, you can just delete the text and an email will not be "
+"sent."
+msgstr ""
+
+#: templates/settings.php:486
+msgid "Email Content - Logo Image"
+msgstr ""
+
+#: templates/settings.php:489
+msgid ""
+"Choose an image for your custom emails. Keep it 600px or less for best "
+"results."
+msgstr ""
+
+#: templates/settings.php:513
+msgid "Email Content - Registration"
+msgstr ""
+
+#: templates/settings.php:516
+msgid ""
+"The email content that is sent to the user upon registration (using the "
+"Booked registration form). Some tokens you can use:"
+msgstr ""
+
+#: templates/settings.php:518 templates/settings.php:555
+#: templates/settings.php:594 templates/settings.php:633
+#: templates/settings.php:721 templates/settings.php:758
+msgid "To display the person's name."
+msgstr ""
+
+#: templates/settings.php:519 templates/settings.php:556
+#: templates/settings.php:595 templates/settings.php:634
+#: templates/settings.php:722 templates/settings.php:759
+msgid "To display the person's email address."
+msgstr ""
+
+#: templates/settings.php:520 templates/settings.php:761
+msgid "To display the username for login."
+msgstr ""
+
+#: templates/settings.php:521 templates/settings.php:762
+msgid "To display the password for login."
+msgstr ""
+
+#: templates/settings.php:550
+msgid "Email Content - Appointment Confirmation"
+msgstr ""
+
+#: templates/settings.php:553
+msgid ""
+"The email content that is sent to the user upon appointment creation. Some "
+"tokens you can use:"
+msgstr ""
+
+#: templates/settings.php:557 templates/settings.php:596
+#: templates/settings.php:635 templates/settings.php:723
+#: templates/settings.php:760
+msgid "To display the calendar name (if one is used) for this appointment."
+msgstr ""
+
+#: templates/settings.php:558 templates/settings.php:597
+#: templates/settings.php:636 templates/settings.php:724
+msgid "To display the appointment date."
+msgstr ""
+
+#: templates/settings.php:559 templates/settings.php:598
+#: templates/settings.php:637 templates/settings.php:725
+msgid "To display the appointment time."
+msgstr ""
+
+#: templates/settings.php:560 templates/settings.php:599
+#: templates/settings.php:638 templates/settings.php:726
+#: templates/settings.php:763
+msgid "To display all custom field values associated with this appointment."
+msgstr ""
+
+#: templates/settings.php:589
+msgid "Email Content - Appointment Approval"
+msgstr ""
+
+#: templates/settings.php:592
+msgid ""
+"The email content that is sent to the user upon appointment approval. Some "
+"tokens you can use:"
+msgstr ""
+
+#: templates/settings.php:628
+msgid "Email Content - Appointment Cancellation"
+msgstr ""
+
+#: templates/settings.php:631
+msgid ""
+"The email content that is sent to the user upon appointment cancellation. "
+"Some tokens you can use:"
+msgstr ""
+
+#: templates/settings.php:668
+msgid ""
+"Which Administrator or Booking Agent user should receive the notification "
+"emails by default?"
+msgstr ""
+
+#: templates/settings.php:670
+msgid ""
+"By default, Booked uses the <strong>Settings > General > E-mail Address</"
+"strong> setting. Also, each custom calendar can have their own user "
+"notification setting, this is just the default."
+msgstr ""
+
+#: templates/settings.php:686
+msgid "Choose a default user for notifications"
+msgstr ""
+
+#: templates/settings.php:716
+msgid "New Appointment Request"
+msgstr ""
+
+#: templates/settings.php:719
+msgid ""
+"The email content that is sent (to the selected admin users above) upon "
+"appointment request. Some tokens you can use:"
+msgstr ""
+
+#: templates/settings.php:753
+msgid "Appointment Cancellation"
+msgstr ""
+
+#: templates/settings.php:756
+msgid ""
+"The email content that is sent (to the selected admin users above) upon "
+"cancellation. Some tokens you can use:"
+msgstr ""
+
+#: templates/settings.php:838 templates/settings.php:966
+#: templates/settings.php:1020
+msgid "Checkbox"
+msgstr ""
+
+#: templates/settings.php:845 templates/settings.php:973
+#: templates/settings.php:1028
+msgid "Radio Button"
+msgstr ""
+
+#: templates/settings.php:852 templates/settings.php:980
+#: templates/settings.php:1036
+msgid "Option"
+msgstr ""
+
+#: templates/settings.php:885 templates/settings.php:992
+#: templates/settings.php:1004
+msgid "Single Line Text"
+msgstr ""
+
+#: templates/settings.php:886 templates/settings.php:897
+#: templates/settings.php:908 templates/settings.php:920
+#: templates/settings.php:932 templates/settings.php:1005
+#: templates/settings.php:1011 templates/settings.php:1017
+#: templates/settings.php:1025 templates/settings.php:1033
+msgid "Required Field"
+msgstr ""
+
+#: templates/settings.php:896 templates/settings.php:993
+#: templates/settings.php:1010
+msgid "Paragraph Text"
+msgstr ""
+
+#: templates/settings.php:907 templates/settings.php:994
+#: templates/settings.php:1016
+msgid "Checkboxes"
+msgstr ""
+
+#: templates/settings.php:919 templates/settings.php:995
+#: templates/settings.php:1024
+msgid "Radio Buttons"
+msgstr ""
+
+#: templates/settings.php:931 templates/settings.php:996
+#: templates/settings.php:1032
+msgid "Drop Down"
+msgstr ""
+
+#: templates/settings.php:1064
+msgid "Save Custom Fields"
+msgstr ""
+
+#: templates/settings.php:1065 templates/settings.php:1221
+msgid "Saving"
+msgstr ""
+
+#: templates/settings.php:1106
+msgid "Single"
+msgstr ""
+
+#: templates/settings.php:1107
+msgid "Bulk"
+msgstr ""
+
+#: templates/settings.php:1153 templates/settings.php:1245
+msgid "Start date"
+msgstr ""
+
+#: templates/settings.php:1154 templates/settings.php:1246
+msgid "Optional End date"
+msgstr ""
+
+#: templates/settings.php:1163 templates/settings.php:1250
+msgid "Disable appointments"
+msgstr ""
+
+#: templates/settings.php:1205 templates/settings.php:1256
+msgid "+ Single Time Slot"
+msgstr ""
+
+#: templates/settings.php:1206 templates/settings.php:1257
+msgid "+ Bulk Time Slots"
+msgstr ""
+
+#: templates/settings.php:1219
+msgid "Add Date(s)"
+msgstr ""
+
+#: templates/settings.php:1220
+msgid "Save Custom Time Slots"
+msgstr ""
+
+#: templates/settings.php:1265 templates/settings.php:1270
+msgid "Close"
+msgstr ""
+
+#: templates/settings.php:1281
+msgid "Display the Default Calendar"
+msgstr ""
+
+#: templates/settings.php:1282
+msgid ""
+"You can use this shortcode to display the front-end booking calendar. Use "
+"the \"calendar\" attribute to\n"
+"\t\t\t\t\t\t\tdisplay a specific calendar. Use the \"year\" and/or \"month\" "
+"attributes to display a specific month and/or\n"
+"\t\t\t\t\t\t\tyear. You can also use the \"switcher\" variable to add a "
+"calendar switcher dropdown above the calendar. Your\n"
+"\t\t\t\t\t\t\tusers can then switch between each calendar you've created."
+msgstr ""
+
+#: templates/settings.php:1286
+msgid "Example:"
+msgstr ""
+
+#: templates/settings.php:1287
+msgid ""
+"This will display the calendar with the ID of 12, and it will start the "
+"calendar at July, 2016 when loaded.\n"
+"\t\t\t\t\t\t\tIt will also display the dropdown switcher with the current "
+"calendar preselected."
+msgstr ""
+
+#: templates/settings.php:1298
+msgid "Display a Custom Calendar"
+msgstr ""
+
+#: templates/settings.php:1316
+msgid "Display the Login / Register Form"
+msgstr ""
+
+#: templates/settings.php:1317
+msgid ""
+"If the Registration tab doesn't show up, be sure to allow registrations from "
+"the Settings > General page."
+msgstr ""
+
+#: templates/settings.php:1324
+msgid "Display Appointments List"
+msgstr ""
+
+#: templates/settings.php:1325
+msgid ""
+"You can use this shortcode to display the currently logged in user's "
+"upcoming appointments."
+msgstr ""
+
+#: wp-updates-plugin.php:87
+msgid ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
+"\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr ""
+
+#: wp-updates-plugin.php:91
+msgid "An unknown error occurred"
+msgstr ""

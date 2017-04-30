@@ -1,0 +1,60 @@
+@import "variables";
+@import "breakpoints";
+@import "mixins";
+
+// Container widths
+.container {
+	@include make-container();
+	@include make-container-max-widths();
+}
+
+
+// Fluid container
+.container-fluid {
+	@include make-container();
+}
+
+// Row
+.row {
+	@include make-row();
+}
+
+// Columns
+@include make-grid-columns();
+
+// Flex column reordering
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		.col-#{$breakpoint}-first { order: -1; }
+		.col-#{$breakpoint}-last  { order: 1; }
+	}
+}
+
+// Vertical alignment for every column in row
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		.row-#{$breakpoint}-top    { align-items: flex-start; }
+		.row-#{$breakpoint}-center { align-items: center; }
+		.row-#{$breakpoint}-bottom { align-items: flex-end; }
+	}
+}
+
+// Horizontal alignment for every column in row
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		.row-#{$breakpoint}-left         { justify-content: flex-start; }
+		.row-#{$breakpoint}-flex-center  { justify-content: center; }
+		.row-#{$breakpoint}-right        { justify-content: flex-end; }
+		.row-#{$breakpoint}-between      { justify-content: space-between; }
+		.row-#{$breakpoint}-around       { justify-content: space-around; }
+	}
+}
+
+// Alignment per column
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		.col-#{$breakpoint}-top    { align-self: flex-start; }
+		.col-#{$breakpoint}-center { align-self: center; }
+		.col-#{$breakpoint}-bottom { align-self: flex-end; }
+	}
+}

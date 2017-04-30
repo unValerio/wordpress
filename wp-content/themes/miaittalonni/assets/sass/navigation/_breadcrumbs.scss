@@ -1,0 +1,39 @@
+.breadcrumbs {
+	position: relative;
+	margin: 1em 0;
+	&__title {
+		float: left;
+		margin-right: 2em;
+		padding-right: 2em;
+		border-right: 1px solid #e0e0e8;
+		.page-title {
+			margin: 0;
+		}
+	}
+	&__items {
+		float: left;
+	}
+	&__browse {
+		float: left;
+		margin-right: .5em;
+	}
+	&__wrap {
+		float: left;
+		margin: 0;
+		@include media-breakpoint-up(lg) {
+			margin: .25em 0;
+		}
+	}
+	&__item {
+		float: left;
+		&-sep {
+			margin: 0 1.5em;
+			@include media-breakpoint-up(lg) {
+				margin: 0 2.4em;
+			}
+		}
+		&-link {
+			text-decoration: none;
+		}
+	}
+}

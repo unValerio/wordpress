@@ -1,0 +1,15 @@
+a {
+	text-decoration: none;
+	transition: .3s;
+	&:focus {
+		//outline: thin dotted;
+		outline: none;
+	}
+	&:hover,
+	&:active {
+		text-decoration: none;
+	}
+	h1 &, h2 &, h3 &, h4 &, h5 &, h6 & {
+		color: inherit;
+	}
+}

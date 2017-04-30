@@ -1,0 +1,51 @@
+.embed-responsive {
+	position: relative;
+	display: block;
+	padding: 0;
+
+	.embed-responsive-item,
+	iframe,
+	embed,
+	object {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		border: 0;
+	}
+
+	// Modifier class for 16:9 aspect ratio
+	&.embed-responsive-16by9 {
+
+		padding-bottom: $embed__ratio;
+
+		.posts-list--grid-2-cols &,
+		.posts-list--masonry-2-cols &,
+		.posts-list--grid-3-cols &,
+		.posts-list--masonry-3-cols &,
+		.two-sidebars &{
+			padding-bottom: 100%;
+		}
+	}
+
+	// Modifier class for 4:3 aspect ratio
+	&.embed-responsive-4by3 {
+		padding-bottom: 75%;
+	}
+}
+
+.mejs-container {
+	.entry-content &{
+		margin-bottom: 1.5em;
+	}
+}
+
+/* Facebook embed */
+.fb_iframe_widget {
+	max-width: 100%;
+	> span {
+		max-width: 100%;
+	}
+}

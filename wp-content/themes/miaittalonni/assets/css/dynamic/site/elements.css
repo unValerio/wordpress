@@ -1,0 +1,34 @@
+/* #Elements */
+blockquote {
+	color: $regular_accent_color_2;
+	font-family: @font_family( $h1_font_family );
+}
+blockquote cite{
+	color: $invert_accent_color_3;
+	font-family: @font_family( $body_font_family );
+}
+blockquote cite a{
+	color: $regular_link_color;
+}
+blockquote a:hover {
+	color: $regular_link_hover_color;
+}
+code {
+	color: $invert_text_color;
+	background: $regular_accent_color_1;
+	font-style: $body_font_style;
+	font-weight: $body_font_weight;
+	font-size: $body_font_size{px};
+	line-height: $body_line_height;
+	font-family: @font_family( $body_font_family );
+}
+
+/*List*/
+.entry-content ol >li:before{
+	color: $regular_accent_color_2;
+	font-family: @font_family( $h1_font_family );
+}
+.entry-content dl dt{
+	font-family: @font_family( $h1_font_family );
+	color: $regular_accent_color_2;
+}

@@ -1,0 +1,31 @@
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	@include btn;
+	transition: .3s;
+}
+
+// General styles
+.btn{
+	text-decoration: none;
+	@include font-size(1);
+	min-width: 195px;
+	@include btn;
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 10px;
+	}
+	&-fullwidth {
+		width: 100%;
+	}
+}
+.btn-link{
+	text-transform: uppercase;
+	@include font-size(1);
+	line-height: 1.5;
+	font-weight: 700;
+}

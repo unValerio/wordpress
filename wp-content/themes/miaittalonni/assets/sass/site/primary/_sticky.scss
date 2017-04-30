@@ -1,0 +1,45 @@
+.sticky {
+	display: block;
+	overflow: hidden;
+	position: relative;
+
+	.post-thumbnail,
+	.post-featured-content {
+		overflow: hidden;
+		position: relative;
+	}
+
+	&.no-thumb.format-standard,
+	&.format-audio {
+		.post-thumbnail,
+		.post-featured-content {
+			padding-top: 90px;
+		}
+	}
+
+	&__label {
+		line-height: 35px;
+		height: 35px;
+		display: block;
+		text-align: center;
+		transform: rotate(-45deg);
+		position: absolute;
+		z-index: 99;
+		top: 15px;
+		width: 200px;
+		left: -70px;
+
+		i,
+		.material-icons,
+		.fa {
+			font-size: 20px;
+			line-height: 35px;
+			display: block;
+			width: auto;
+			height: auto;
+		}
+	}
+	.post-thumbnail__img {
+		width: 100%;
+	}
+}

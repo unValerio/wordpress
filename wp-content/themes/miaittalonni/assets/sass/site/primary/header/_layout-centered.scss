@@ -1,0 +1,5 @@
+.site-header.centered {
+	@include media-breakpoint-up(md) {
+		text-align: center;
+	}
+}

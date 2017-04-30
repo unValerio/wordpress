@@ -1,0 +1,89 @@
+/* #Header */
+.header-wrapper {
+	background-color: $header_bg_color;
+	background-image: url($header_bg_image);
+	background-repeat: $header_bg_repeat;
+	background-position: $header_bg_position_x top;
+	background-attachment: $header_bg_attachment;
+}
+.isStuck {
+	background-color: $header_bg_color;
+}
+
+/* ##Logo */
+.site-logo{
+	font-style: $header_logo_font_style;
+	font-weight: $header_logo_font_weight;
+	font-size: $header_logo_font_size{px};
+	font-family: @font_family( $header_logo_font_family );
+}
+.site-logo a,
+.site-logo__link:hover{
+	color: $regular_accent_color_2;
+}
+.invert .site-logo a,
+.invert .site-logo__link:hover{
+	color: $invert_text_color;
+}
+
+/* ##Top Panel */
+.top-panel {
+	background-color: $top_panel_bg;
+}
+.invert .info-block {
+	color: $regular_text_color;
+}
+.info-block .fa,
+.info-block .material-icon {
+	color: $regular_accent_color_1;
+}
+.invert .info-block .fa,
+.invert .info-block .material-icon {
+	color: $regular_accent_color_1;
+}
+
+/* ##Showcase panel */
+.showcase-active .header-wrapper{
+	background-color: $header_showcase_bg_color;
+	background-repeat: $header_showcase_bg_repeat;
+	background-position: $header_showcase_bg_position_x top;
+	background-attachment: $header_showcase_bg_attachment;
+}
+
+.showcase-active .header-wrapper:before {
+	background-color: @alpha($header_showcase_color_mask, $header_showcase_opacity_mask);
+}
+
+.showcase-panel__title {
+	font-style: $showcase_title_font_style;
+	font-weight: $showcase_title_font_weight;
+	font-size: @font_size($showcase_title_font_size, multiple, ceil, 0.7826)px;
+	line-height: $showcase_title_line_height;
+	font-family: @font_family( $showcase_title_font_family );
+	letter-spacing: $showcase_title_letter_spacing{px};
+	color: $showcase_title_color;
+	text-transform: $showcase_title_text_transform;
+}
+.showcase-panel__subtitle {
+	font-style: $showcase_subtitle_font_style;
+	font-weight: $showcase_subtitle_font_weight;
+	font-size: @font_size($showcase_subtitle_font_size, multiple, ceil, 0.636363)px;
+	line-height: $showcase_subtitle_line_height;
+	font-family: @font_family( $showcase_subtitle_font_family );
+	color: $showcase_subtitle_color;
+	text-transform: $showcase_subtitle_text_transform;
+}
+.showcase-panel__description {
+	font-size: @font_size($body_font_size, multiple, ceil, 1.375)px;
+	color: $showcase_description_color;
+}
+
+@media (min-width: 768px) {
+	.showcase-panel__title{
+		font-size: $showcase_title_font_size{px};
+	}
+	.showcase-panel__subtitle {
+		font-size: $showcase_subtitle_font_size{px};
+		letter-spacing: $showcase_subtitle_letter_spacing{px};
+	}
+}

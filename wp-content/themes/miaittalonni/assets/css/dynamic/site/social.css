@@ -1,0 +1,20 @@
+/* #Social */
+.social-list a::before{
+	background: transparent;
+	color: $regular_text_color;
+}
+.social-list a:hover::before{
+	background: $regular_accent_color_2;
+	color: $invert_text_color;
+}
+.invert .social-list a:hover::before{
+	background: $regular_accent_color_1;
+	color: $regular_accent_color_2;
+}
+/*#Share list*/
+.share-btns__link{
+	color: $invert_accent_color_3
+}
+.share-btns__link:hover{
+	color: $regular_link_color;
+}

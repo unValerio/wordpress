@@ -1,0 +1,131 @@
+.widget-subscribe {
+	.container {
+		&.subscribe-block__wrap,
+		&.follow-block__wrap {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	.subscribe-follow__wrap {
+		padding: 25px 15px;
+		@include media-breakpoint-only(md) {
+			padding: 25px 0;
+		}
+
+		.full-width-header-area &,
+		.after-content-full-width-area & {
+			padding: 63px 0 44px;
+		}
+	}
+
+	#tm_builder_outer_content .tm_pb_widget_area & {
+		* {
+			max-width: none;
+		}
+	}
+}
+
+.follow-block {
+	padding: 0 0 20px;
+	.widget-title {
+		margin-bottom: 0;
+	}
+	.subscribe-block + & {
+		padding: 15px 0 0;
+		@include media-breakpoint-up(lg) {
+			padding: 25px 0 0;
+		}
+	}
+	&__wrap {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.social-list {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+
+.subscribe-block {
+	.widget-title {
+		margin-bottom: 0;
+	}
+	&__form {
+		.full-width-header-area &,
+		.after-content-full-width-area & {
+			@include media-breakpoint-up(lg) {
+				padding-top: 8px;
+			}
+		}
+	}
+	&__input-group {
+		display: flex;
+		flex-flow: row wrap;
+
+		.full-width-header-area &,
+		.after-content-full-width-area & {
+			@include media-breakpoint-up(sm) {
+				flex-flow: row nowrap;
+			}
+		}
+	}
+	&__input[type='email'] {
+		background-color: #ed7c03;
+		flex: 1 1;
+		padding: 11px 27px;;
+		margin-bottom: 5px;
+		@include font-size(.9375);
+		line-height: 28px;
+		box-shadow: none;
+		border: 2px solid #ed7c03;
+		max-width: 100%;
+
+		.full-width-header-area &,
+		.after-content-full-width-area & {
+			@include media-breakpoint-up(sm) {
+				border-right: none;
+				margin-bottom: 0;
+			}
+		}
+		&.error {
+			border-color: $color__not-valid;
+		}
+	}
+	&__submit {
+		padding: 17px 26.5px;;
+		width: 100%;
+
+		.sidebar-primary &,
+		.sidebar-secondary &,
+		.footer-area & {
+			min-width: 50px;
+		}
+
+		.full-width-header-area &,
+		.after-content-full-width-area & {
+			@include media-breakpoint-up(sm) {
+				@include media-breakpoint-up(sm) {
+					width: auto;
+				}
+			}
+		}
+	}
+	&__message {
+		padding: 0 0 25px;
+	}
+	&__error {
+		color: $color__not-valid;
+	}
+	&__success {
+		color: $color__valid;
+	}
+}
+.after-content-full-width-area .subscribe-block a {
+	text-transform: none;
+}
+.subscribe-block__message {
+	font-size: 15px;
+}

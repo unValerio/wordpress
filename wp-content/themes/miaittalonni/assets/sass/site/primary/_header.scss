@@ -1,0 +1,69 @@
+.site-header {}
+
+.header-wrapper{
+	background-size: cover;
+}
+
+.header-container {
+	position: relative;
+	border-bottom: 2px solid #efefef;
+	&.invert {
+		border-bottom: none;
+	}
+	@include media-breakpoint-up(md) {
+		padding: 31.25px 0 21px;
+	}
+	.site-header.minimal & {
+		@include media-breakpoint-up(xl) {
+			padding: 31.25px 0;
+		}
+	}
+	&_wrap {
+		position: relative;
+		padding-left: 0.9375rem;
+		padding-right: 0.9375rem;
+		.main-navigation {
+			@include media-breakpoint-up(md) {
+				margin-top: 14px;
+				&.isStuck {
+					@include media-breakpoint-up(md) {
+						margin: 0;
+					}
+				}
+			}
+		}
+		.site-branding {
+			@include media-breakpoint-down(sm) {
+				padding: 31.25px 35px 31.25px 0;
+			}
+		}
+	}
+
+	.container {
+		@include media-breakpoint-down(sm) {
+			max-width: inherit;
+		}
+	}
+}
+
+.isStuck {
+	&.main-navigation {
+		@include media-breakpoint-up(md) {
+			position: fixed;
+			z-index: 1000;
+			right: 0;
+			left: 0;
+			text-align: center;
+			padding: 10px 15px;
+			margin: 0;
+			box-shadow: $box__shadow;
+		}
+	}
+}
+
+@import "header/layout-default";
+@import "header/layout-centered";
+@import "header/layout-minimal";
+@import "header/top-panel";
+@import "header/showcase-panel";
+@import "header/logo";

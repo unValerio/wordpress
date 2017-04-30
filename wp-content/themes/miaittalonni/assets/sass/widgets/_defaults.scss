@@ -1,0 +1,167 @@
+.widget {}
+
+.widget_archive,
+.widget_categories,
+.widget_pages,
+.widget_meta,
+.widget_rss,
+.widget_nav_menu,
+.widget_calendar,
+.widget_search,
+.widget_tag_cloud,
+.widget_recent_entries,
+.widget_recent_comments{
+	.full-width-header-area &,
+	.after-content-full-width-area & {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.widget_archive,
+#tm_builder_outer_content .widget_archive,
+.widget_categories,
+#tm_builder_outer_content .widget_categories,
+.widget_pages,
+#tm_builder_outer_content .widget_pages,
+.widget_meta,
+#tm_builder_outer_content .widget_meta,
+.widget_rss,
+#tm_builder_outer_content .widget_rss,
+.widget_nav_menu,
+#tm_builder_outer_content .widget_nav_menu {
+	ul {
+		margin-bottom: 0;
+		margin-left: 0;
+		padding: 0;
+	}
+	li {
+		position: relative;
+		padding-left: 1em;
+		list-style: none;
+		@include media-breakpoint-up(xl) {
+			padding-left: 2.5em;
+		}
+		& + li,
+		> ul li,
+		> ol li {
+			margin-top: 0.8em;
+		}
+		> ul {
+			margin-left: 0;
+		}
+	}
+	li {
+		&:before {
+			@include font-awesome-icon();
+			@include font-size(1);
+			line-height: 1.75;
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: '\f105';
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Calendar
+--------------------------------------------------------------*/
+.widget_calendar {
+	.entry-content #tm_builder_outer_content & {
+		table, th,
+		td, thead th,
+		tbody + tbody {
+			border: none;
+		}
+	}
+	table {
+		margin-bottom: 0;
+	}
+	caption {
+		margin-bottom: 1.5em;
+	}
+	th, tbody td {
+		width: 14.2857%;
+		padding: .13em 0;
+		text-align: center;
+		@include font-size(.9375);
+
+		a {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			@include border-radius($border__radius);
+			display: inline-block;
+		}
+	}
+	th{
+		padding: .13em 0 .35em;
+		@include font-size(.875);
+	}
+	#next {
+		text-align: right;
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Tag Cloud
+--------------------------------------------------------------*/
+.tagcloud {
+	margin-right: -3px;
+	margin-left: -3px;
+
+	a {
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: 400;
+		padding: 5px 15px;
+		border: 2px solid;
+		@include border-radius($border__radius);
+		letter-spacing: 1.44px;
+		margin: 5px 3px;
+		.invert &{
+			background-color: transparent;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Recent Posts
+--------------------------------------------------------------*/
+.widget_recent_entries {
+	li {
+		margin-left: 0;
+		padding-left: 0;
+		&::before {
+			display: none;
+		}
+		& + li {
+			margin-top: 1.6em;
+		}
+		.post-date {
+			@include font-size(14/16);
+			display: block;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Recent Comments
+--------------------------------------------------------------*/
+.widget_recent_comments {
+	li {
+		line-height: 1.5625;
+		margin-left: 0;
+		padding-left: 0;
+		&::before {
+			display: none;
+		}
+		& + li {
+			margin-top: 1.6em;
+		}
+	}
+}

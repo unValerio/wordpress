@@ -1,0 +1,28 @@
+.subscribe-block__input[type="email"] {
+	color: $invert_accent_color_1;
+}
+.subscribe-block__input[type="email"]::-webkit-input-placeholder { color: $invert_accent_color_1; }
+.subscribe-block__input[type="email"]::-moz-placeholder { color: $invert_accent_color_1; }
+.subscribe-block__input[type="email"]:-moz-placeholder { color: $invert_accent_color_1; }
+.subscribe-block__input[type="email"]:-ms-input-placeholder { color: $invert_accent_color_1; }
+
+.widget-subscribe .subscribe-block .widget-title{
+	font-style: $h2_font_style;
+	font-weight: $h2_font_weight;
+	font-size: @font_size($h2_font_size, multiple, ceil, 1)px;
+	line-height: $h2_line_height;
+	font-family: @font_family( $h2_font_family );
+}
+.widget-subscribe .follow-block .widget-title {
+	font-style: $h3_font_style;
+	font-weight: $h3_font_weight;
+	font-size: @font_size($h3_font_size, multiple, ceil, 0.9)px;
+	line-height: $h3_line_height;
+	font-family: @font_family( $h3_font_family );
+}
+.after-content-full-width-area .widget-subscribe .subscribe-follow__wrap {
+	background-color: $regular_accent_color_1;
+}
+.home .subscribe-block__error {
+	color: $invert_accent_color_1;
+}

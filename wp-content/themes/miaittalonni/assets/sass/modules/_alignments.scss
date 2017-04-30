@@ -1,0 +1,24 @@
+.alignleft {
+	float: left;
+	margin: 10px 30px 15px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 10px 0 15px 30px;
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+	margin-bottom: 15px;
+}
+.size-miaittalonni-thumb-390-311,
+.size-miaittalonni-thumb-682-351{
+	@include media-breakpoint-down(sm) {
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+}
