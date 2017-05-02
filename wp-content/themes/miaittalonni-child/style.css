@@ -1,38 +1,128 @@
 /*
- Theme Name:   PresumeTuSalsa (miaittalonni-child)
+ Theme Name:   Presume tu Salsa Blog
  Theme URI:    https://presumetusalsa.com
  Description:  Tema para presume tu salsa
  Author:       Sergio Enrique Vargas
  Author URI:   http://sergioenrique.com
- Template:     Miaittalonni
- Version:      1.0.0
+ Template:     miaittalonni
+ Version:      1.0.6
  License:      UNLICENSED
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  twenty-fifteen-child
+ Text Domain:  miaittalonni-child
 */
 
+
+
 .header-wrapper{
-	width: 100%;
+    width: 100%;
     height: 100vh;
     background-repeat: no-repeat!important;
     background-position-x: center!important;
-    background-position-y: 48%!important;
-    background-size: 116%!important;
+    background-position-y: 41%!important;
+    background-size: 133%!important;
 }
 
 @media (max-width: 768px){
 	.header-wrapper{
-		height: 100%!important;
-	    background-position-y: 0!important;
-	    background-size: cover;
+        height: 100vh;
+        background-size: 388%!important;
+        background-position-y: 38%!important;
 	}
-}
-
-@media (min-width: 768px){
-.showcase-panel {
-    padding: 59px 15px 200px;
 }
 
 .showcase-active .header-wrapper:before {
     background-color: rgba(0, 0, 0, 0)!important;
 }
+
+.showcase-panel{
+    width: 100%;
+    bottom: 0;
+    padding: 0;
+}
+
+.etiqueta{
+    display: block;
+    margin: auto;
+}
+
+.eligeestado{
+    display: block;
+    margin: auto;
+    height: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    color: white;
+}
+
+.listaestado{
+    position: absolute;
+    top: -36px;
+    cursor: pointer;
+    right: -2px;
+    color: white;
+}
+
+.listaestado>select{
+    font-size: 20px;
+    background: none;
+    border: none;
+    padding: 10px 43px;
+    cursor: pointer;
+}
+
+.listaestado>select option{
+    color: black;
+    background-color: white;
+}
+
+.logosolo{
+    max-width: 40%;
+}
+
+.cosin{
+    position: absolute;
+    display: block!important;
+    color: white;
+    right: 15px;
+    top: -25px;
+    font-size: 25px!important;
+    z-index: -1;
+}
+
+.ganarias{
+    margin-top: 30px;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 19px;
+}
+
+@media (max-width: 768px){
+    .logosolo{
+        max-width: 90%;
+    }
+    .ganarias{
+        font-size: 16px;
+    }
+    .etiqueta{
+        max-width: 80%;
+    }
+}
+
+.centercontainer{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    left: 0;
+    display: block;
+    top: 22%;
+}
+
+.menu{
+    position: relative;
+    z-index: 1;
+}
+
+
