@@ -218,6 +218,8 @@ $edi = edicion($isoCode);
 	}
 
 	jQuery(function() {
+
+		var cambiado = false
 	
 		var isoCode = "<?php echo $isoCode; ?>"
 		var edicion = "<?php echo $edi; ?>"
@@ -235,6 +237,8 @@ $edi = edicion($isoCode);
 
 		    	jQuery(".etiqueta").attr("src", nuevaImagen) // Cambiar la imagen del listón
 		    	jQuery(".btn-participar").attr("href", nuevoLink) // Cambiar href del botón
+
+		    	cambiado = true
 		    })
 		})
 
@@ -254,7 +258,21 @@ $edi = edicion($isoCode);
 									if (data.results[i].address_components[j].types[k] === "administrative_area_level_1") {
 										var nuevoestado = miestado(data.results[i].address_components[j].short_name)
 										var nuevaedicion = miedicion(nuevoestado)
-										console.log(nuevoestado, nuevaedicion)
+										
+										var nuevaImagen = imagePath+nuevaedicion+".png"
+		    							var nuevoLink = "https://"+nuevaedicion+link+nuevoestado
+		    							if (nuevaedicion === "pacifico") {nuevoLink = "https://pacifico.presumetusalsa.com"}
+
+		    							// Si ya se seleccionó un estado ya no se debe actualizar atuomáticamente
+		    							if (!cambiado) {
+		    								jQuery(".target").val(nuevoestado)
+		    								jQuery(".etiqueta").attr("src", nuevaImagen) // Cambiar la imagen del listón
+		    								jQuery(".btn-participar").attr("href", nuevoLink) // Cambiar href del botón
+		    							}
+		    							else{
+		    								console.log("Ya se habia cambiado")
+		    							}
+
 										break loop1;
 									}
 								}
